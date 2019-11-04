@@ -1,0 +1,54 @@
+C:\Users\Developer151\source\repos\Germany\Domain.Entities\bin\Debug\netstandard2.0\Domain.Entities.deps.json
+C:\Users\Developer151\source\repos\Germany\Domain.Entities\bin\Debug\netstandard2.0\Domain.Entities.dll
+C:\Users\Developer151\source\repos\Germany\Domain.Entities\bin\Debug\netstandard2.0\Domain.Entities.pdb
+C:\Users\Developer151\source\repos\Germany\Domain.Entities\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Developer151\source\repos\Germany\Domain.Entities\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.xml
+C:\Users\Developer151\source\repos\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.csprojAssemblyReference.cache
+C:\Users\Developer151\source\repos\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Developer151\source\repos\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.AssemblyInfoInputs.cache
+C:\Users\Developer151\source\repos\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.AssemblyInfo.cs
+C:\Users\Developer151\source\repos\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.csproj.CopyComplete
+C:\Users\Developer151\source\repos\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.dll
+C:\Users\Developer151\source\repos\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.pdb
+C:\Projects\Germany\Domain.Entities\bin\Debug\netstandard2.0\Domain.Entities.deps.json
+C:\Projects\Germany\Domain.Entities\bin\Debug\netstandard2.0\Domain.Entities.dll
+C:\Projects\Germany\Domain.Entities\bin\Debug\netstandard2.0\Domain.Entities.pdb
+C:\Projects\Germany\Domain.Entities\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Projects\Germany\Domain.Entities\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.xml
+C:\Projects\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.csproj.CoreCompileInputs.cache
+C:\Projects\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.AssemblyInfoInputs.cache
+C:\Projects\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.AssemblyInfo.cs
+C:\Projects\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.csproj.CopyComplete
+C:\Projects\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.dll
+C:\Projects\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.pdb
+C:\Projects\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.csprojAssemblyReference.cache
+F:\New folder\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.csprojAssemblyReference.cache
+F:\New folder\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.csproj.CoreCompileInputs.cache
+F:\New folder\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.AssemblyInfoInputs.cache
+F:\New folder\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.AssemblyInfo.cs
+F:\New folder\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.dll
+F:\New folder\Germany\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.pdb
+C:\Users\Developer151\source\repos\Amlak\Domain.Entities\bin\Debug\netstandard2.0\Domain.Entities.deps.json
+C:\Users\Developer151\source\repos\Amlak\Domain.Entities\bin\Debug\netstandard2.0\Domain.Entities.dll
+C:\Users\Developer151\source\repos\Amlak\Domain.Entities\bin\Debug\netstandard2.0\Domain.Entities.pdb
+C:\Users\Developer151\source\repos\Amlak\Domain.Entities\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Developer151\source\repos\Amlak\Domain.Entities\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.xml
+C:\Users\Developer151\source\repos\Amlak\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Developer151\source\repos\Amlak\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.AssemblyInfoInputs.cache
+C:\Users\Developer151\source\repos\Amlak\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.AssemblyInfo.cs
+C:\Users\Developer151\source\repos\Amlak\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.csproj.CopyComplete
+C:\Users\Developer151\source\repos\Amlak\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.dll
+C:\Users\Developer151\source\repos\Amlak\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.pdb
+C:\Users\Developer151\source\repos\Amlak\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.csprojAssemblyReference.cache
+C:\Users\Developer151\source\repos\Mountain\Domain.Entities\bin\Debug\netstandard2.0\Domain.Entities.deps.json
+C:\Users\Developer151\source\repos\Mountain\Domain.Entities\bin\Debug\netstandard2.0\Domain.Entities.dll
+C:\Users\Developer151\source\repos\Mountain\Domain.Entities\bin\Debug\netstandard2.0\Domain.Entities.pdb
+C:\Users\Developer151\source\repos\Mountain\Domain.Entities\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Developer151\source\repos\Mountain\Domain.Entities\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.xml
+C:\Users\Developer151\source\repos\Mountain\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.csprojAssemblyReference.cache
+C:\Users\Developer151\source\repos\Mountain\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Developer151\source\repos\Mountain\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.AssemblyInfoInputs.cache
+C:\Users\Developer151\source\repos\Mountain\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.AssemblyInfo.cs
+C:\Users\Developer151\source\repos\Mountain\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.csproj.CopyComplete
+C:\Users\Developer151\source\repos\Mountain\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.dll
+C:\Users\Developer151\source\repos\Mountain\Domain.Entities\obj\Debug\netstandard2.0\Domain.Entities.pdb

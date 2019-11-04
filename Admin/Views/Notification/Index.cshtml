@@ -1,0 +1,131 @@
+﻿@model List<User>
+@{
+    bool ForSave = true;
+}
+<div class="row">
+
+    <div class="col-md-12">
+        <div class="row m-4">
+            <textarea placeholder="متن مورد نظر را وارد کنید" rows="5" style="width:100%;" id="not"></textarea>
+        </div>
+        <div class="row m-4">
+
+            <div class="col-m-1">
+                <button class="btn btn-danger" onclick="Send()">ارسال</button>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="progress-outer">
+                            <div class="progress" id="progDiv" style="visibility:hidden">
+                                <div id="prog" class="progress-bar progress-bar-striped progress-bar-danger" style="width:0%;"></div>
+                                <div class="progress-value"><span id="percent">0</span>%</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-4">
+            <div class="card">
+                <div class="card-header card-header-primary m-4">
+                    <h4 class="card-title ">وضعیت ارسال</h4>
+                    <p class="card-category"> اینجا وضعیت ارسال به کاربران را مشاهده می کنید</p>
+                </div>
+                <div class="card-body table-responsive">
+                    <table class="table table-hover">
+                        <thead class="text-warning">
+                        <th>ردیف</th>
+                        <th>وضعیت</th>
+                        <th>نام</th>
+                        <th>نام خانوادگی</th>
+                        <th>شماره همراه</th>
+                        <th>تاریخ ثبت نام</th>
+                        </thead>
+                        <tbody>
+                            @for (int i = 0; i < Model.Count; i++)
+                            {
+                                var item = Model[i];
+                                <tr>
+                                    <td>
+                                        @(i + 1)
+                                    </td>
+                                    <th><img id="@Model[i].Id" src="~/images/loading.gif" width="30" height="30" /></th>
+                                    <td>
+                                        @item.Name
+                                    </td>
+                                    <td>
+                                        @item.FamilyName
+                                    </td>
+                                    <td>
+                                        @item.PhoneNumber
+                                    </td>
+
+                                    <td class="text-primary">
+                                        @item.RegisterDate.ToPersianDateLongString()
+                                    </td>
+                                </tr>
+                            }
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script>
+        function Send() {
+            var text = document.getElementById('not').value;
+            if (text == '') {
+                alert('متن را وارد کنید');
+                return;
+            }
+
+            if ('@Model.Count' == 0) {
+                alert('یوزری وجود ندارد');
+                return;
+            }
+            var progDiv = document.getElementById('progDiv');
+            var prog = document.getElementById('prog');
+            var percent = document.getElementById('percent');
+            prog.style.width = 0;
+            percent.innerHTML = 0 + 'px';
+            progDiv.style.visibility = 'visible';
+
+
+        @foreach (var d in Model.ToList())
+        {
+            @:document.getElementById('@d.Id').src = "/images/loading.gif";
+        }
+
+            var i = 0;
+            var count = '@Model.Count';
+        //var save = true;
+    @foreach (var d in Model)
+    {
+        @:i++;
+            @:var sendData = { Id: '@d.Id', text: text, save: @ForSave.ToString().ToLower() };
+            @:AJX.post("/Notification/Send", sendData, function (ok) {
+
+                @:document.getElementById('@d.Id').src = "/images/tick.png";
+            @:});
+
+
+
+        @:prog.style.width = (i / count * 100).toFixed(0) + '%'; percent.innerHTML = (i / count * 100).toFixed(0);
+
+
+    }
+
+        progDiv.style.visibility = 'hidden';
+        prog.style.width = 0;
+        percent.innerHTML = 0 + 'px';
+        alert('ارسال با موفقیت انجام شد');
+
+}
+</script>
+

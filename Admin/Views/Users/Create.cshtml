@@ -1,0 +1,41 @@
+﻿@model CreateUserModel
+<div class="card">
+    <form asp-action="Create" asp-controller="Users">
+        <input asp-for="Id" type="hidden" class="form-control" placeholder="عنوان جایگاه" id="Title" />
+        <div class="card-header card-header-primary m-4">
+            <h4 class="card-title ">کاربر جدید</h4>
+            <p class="card-category"> اینجا کاربر جدید ایجاد کنید</p>
+        </div>
+        <div class="form-group rtl m-4">
+            <input asp-for="Name" type="text" class="form-control" placeholder="نام" id="Title" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group rtl m-4">
+            <input asp-for="FamilyName" type="text" class="form-control" placeholder="نام خانوادگی" id="Title" />
+            <span asp-validation-for="FamilyName" class="text-danger"></span>
+        </div>
+        <div class="form-group rtl m-4">
+            <input asp-for="Mobile" type="text" class="form-control" placeholder="موبایل" id="Title" />
+            <span asp-validation-for="Mobile" class="text-danger"></span>
+        </div>
+
+        <div class="form-group rtl m-4">
+            <input asp-for="Password" type="password" class="form-control" placeholder="رمز عبور" id="Title" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div class="form-group rtl m-4">
+            <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="تکرار رمز عبور" id="Title" />
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+        @*<div class="form-group rtl m-4">
+            <label >انتخاب جایگاه</label>
+            <select asp-for="StationId"
+                    class="form-control"
+                    asp-items="@(new SelectList(Model.Stations,"Id", "Name"))"></select>
+        </div>*@
+        <div class="form-group m-4">
+            <button type="submit" class="btn btn-primary" >ذخیره</button>
+        </div>
+    </form>
+</div>

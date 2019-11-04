@@ -1,0 +1,641 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IsTransformWebConfigDisabled>true</IsTransformWebConfigDisabled>
+    <EnableMSDeployAppOffline>true</EnableMSDeployAppOffline>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include="Views\Notification\Index.cshtml" />
+    <None Include="wwwroot\assets\css\material-dashboard-rtl.css" />
+    <None Include="wwwroot\assets\css\material-dashboard.css" />
+    <None Include="wwwroot\assets\css\material-dashboard.css.map" />
+    <None Include="wwwroot\assets\css\material-dashboard.min.css" />
+    <None Include="wwwroot\assets\demo\demo.css" />
+    <None Include="wwwroot\assets\demo\demo.js" />
+    <None Include="wwwroot\assets\img\angular.png" />
+    <None Include="wwwroot\assets\img\apple-icon.png" />
+    <None Include="wwwroot\assets\img\cover.jpg" />
+    <None Include="wwwroot\assets\img\ex1.png" />
+    <None Include="wwwroot\assets\img\ex2.png" />
+    <None Include="wwwroot\assets\img\ex3.png" />
+    <None Include="wwwroot\assets\img\faces\avatar.jpg" />
+    <None Include="wwwroot\assets\img\faces\card-profile1-square.jpg" />
+    <None Include="wwwroot\assets\img\faces\card-profile2-square.jpg" />
+    <None Include="wwwroot\assets\img\faces\marc.jpg" />
+    <None Include="wwwroot\assets\img\favicon.png" />
+    <None Include="wwwroot\assets\img\html.png" />
+    <None Include="wwwroot\assets\img\imac1.png" />
+    <None Include="wwwroot\assets\img\ipad.png" />
+    <None Include="wwwroot\assets\img\iPad2.png" />
+    <None Include="wwwroot\assets\img\iphonex.png" />
+    <None Include="wwwroot\assets\img\Macbook.png" />
+    <None Include="wwwroot\assets\img\mask.png" />
+    <None Include="wwwroot\assets\img\new_logo.png" />
+    <None Include="wwwroot\assets\img\notification.png" />
+    <None Include="wwwroot\assets\img\react.png" />
+    <None Include="wwwroot\assets\img\sidebar-1.jpg" />
+    <None Include="wwwroot\assets\img\sidebar-2.jpg" />
+    <None Include="wwwroot\assets\img\sidebar-3.jpg" />
+    <None Include="wwwroot\assets\img\sidebar-4.jpg" />
+    <None Include="wwwroot\assets\img\table.png" />
+    <None Include="wwwroot\assets\img\vue.png" />
+    <None Include="wwwroot\assets\js\core\bootstrap-material-design.min.js" />
+    <None Include="wwwroot\assets\js\core\jquery.min.js" />
+    <None Include="wwwroot\assets\js\core\popper.min.js" />
+    <None Include="wwwroot\assets\js\material-dashboard.js" />
+    <None Include="wwwroot\assets\js\material-dashboard.js.map" />
+    <None Include="wwwroot\assets\js\material-dashboard.min.js" />
+    <None Include="wwwroot\assets\js\plugins\arrive.min.js" />
+    <None Include="wwwroot\assets\js\plugins\bootstrap-datetimepicker.min.js" />
+    <None Include="wwwroot\assets\js\plugins\bootstrap-notify.js" />
+    <None Include="wwwroot\assets\js\plugins\bootstrap-selectpicker.js" />
+    <None Include="wwwroot\assets\js\plugins\bootstrap-tagsinput.js" />
+    <None Include="wwwroot\assets\js\plugins\chartist.min.js" />
+    <None Include="wwwroot\assets\js\plugins\fullcalendar.min.js" />
+    <None Include="wwwroot\assets\js\plugins\jasny-bootstrap.min.js" />
+    <None Include="wwwroot\assets\js\plugins\jquery-jvectormap.js" />
+    <None Include="wwwroot\assets\js\plugins\jquery.bootstrap-wizard.js" />
+    <None Include="wwwroot\assets\js\plugins\jquery.dataTables.min.js" />
+    <None Include="wwwroot\assets\js\plugins\jquery.tagsinput.js" />
+    <None Include="wwwroot\assets\js\plugins\jquery.validate.min.js" />
+    <None Include="wwwroot\assets\js\plugins\moment.min.js" />
+    <None Include="wwwroot\assets\js\plugins\nouislider.min.js" />
+    <None Include="wwwroot\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <None Include="wwwroot\assets\js\plugins\sweetalert2.js" />
+    <None Include="wwwroot\assets\scss\material-dashboard.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\bootstrap-grid.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\bootstrap-reboot.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\bootstrap.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_alert.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_background-variant.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_badge.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_border-radius.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_box-shadow.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_breakpoints.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_buttons.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_caret.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_clearfix.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_float.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_forms.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_gradients.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_grid-framework.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_grid.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_hover.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_image.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_list-group.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_lists.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_nav-divider.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_navbar-align.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_pagination.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_reset-text.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_resize.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_screen-reader.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_size.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_table-row.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_text-emphasis.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_text-hide.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_text-truncate.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_transition.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\mixins\_visibility.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\utilities\_align.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\utilities\_background.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\utilities\_borders.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\utilities\_clearfix.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\utilities\_display.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\utilities\_embed.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\utilities\_flex.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\utilities\_float.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\utilities\_position.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\utilities\_screenreaders.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\utilities\_sizing.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\utilities\_spacing.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\utilities\_text.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\utilities\_visibility.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_alert.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_badge.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_breadcrumb.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_button-group.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_buttons.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_card.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_carousel.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_close.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_code.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_custom-forms.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_dropdown.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_forms.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_functions.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_grid.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_images.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_input-group.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_jumbotron.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_list-group.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_media.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_mixins.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_modal.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_nav.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_navbar.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_pagination.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_popover.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_print.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_progress.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_reboot.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_root.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_tables.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_tooltip.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_transitions.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_type.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_utilities.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\bootstrap\scss\_variables.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\cards\_card-plain.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\cards\_card-profile.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\cards\_card-stats.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_alert.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_animations.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_breakpoints.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_buttons.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_chartist.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_colored-shadows.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_drawer.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_forms.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_hover.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_layout.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_navbar-colors.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_navs.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_sidebar-color.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_transparency.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_type.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_utilities.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_variables.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\mixins\_vendor-prefixes.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\plugins\_animate.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\plugins\_chartist.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\plugins\_perfect-scrollbar.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_body.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_bootstrap-material-design-base.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_bootstrap-material-design.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_brand.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_buttons.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_card.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_code.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_colors-map.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_colors.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_custom-forms.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_drawer.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_dropdown.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_forms.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_layout.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_list-group.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_menu.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_modals.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_nav.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_pagination.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_shadow.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_snackbar.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_spacing.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_state.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_tables.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_tooltip.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\variables\_type.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_alerts.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_buttons.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_cards.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_checkboxes.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_core-bootstrap.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_dropdown.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_example-pages.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_fixed-plugin.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_footers.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_forms.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_headers.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_images.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_info-areas.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_input-group.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_misc.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_mixins.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_navbar.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_popover.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_popups.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_radios.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_responsive.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_ripples.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_sidebar-and-main-panel.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_social-buttons.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_tables.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_tabs.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_togglebutton.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_tooltip.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_type.scss" />
+    <None Include="wwwroot\assets\scss\material-dashboard\_variables.scss" />
+    <None Include="wwwroot\avatar-01.jpg" />
+    <None Include="wwwroot\css\util.css" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\less\animated.less" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\less\core.less" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\less\icons.less" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\less\larger.less" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\less\list.less" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\less\path.less" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\less\variables.less" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <None Include="wwwroot\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <None Include="wwwroot\fonts\iconic\css\material-design-iconic-font.css" />
+    <None Include="wwwroot\fonts\iconic\css\material-design-iconic-font.min.css" />
+    <None Include="wwwroot\fonts\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <None Include="wwwroot\fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <None Include="wwwroot\fonts\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <None Include="wwwroot\fonts\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <None Include="wwwroot\fonts\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <None Include="wwwroot\fonts\poppins\Poppins-Black.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-Bold.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-Italic.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-Light.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-LightItalic.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-Medium.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-Regular.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-SemiBold.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-Thin.ttf" />
+    <None Include="wwwroot\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <None Include="wwwroot\images\55a0b860-3dd2-4fdc-9c53-1e5baf5d00ad.jpg" />
+    <None Include="wwwroot\images\688b2966-1522-457b-ba54-3aea89734c91.jpg" />
+    <None Include="wwwroot\images\ac253ddd-1f99-4ff1-ae67-5791333da627.jpg" />
+    <None Include="wwwroot\images\avatar-01.jpg" />
+    <None Include="wwwroot\images\avatars\daniel.jpg" />
+    <None Include="wwwroot\images\avatars\elliot.jpg" />
+    <None Include="wwwroot\images\avatars\elyse.png" />
+    <None Include="wwwroot\images\avatars\helen.jpg" />
+    <None Include="wwwroot\images\avatars\jenny.jpg" />
+    <None Include="wwwroot\images\avatars\justen.jpg" />
+    <None Include="wwwroot\images\avatars\kristy.png" />
+    <None Include="wwwroot\images\avatars\matthew.png" />
+    <None Include="wwwroot\images\avatars\molly.png" />
+    <None Include="wwwroot\images\avatars\steve.jpg" />
+    <None Include="wwwroot\images\avatars\stevie.jpg" />
+    <None Include="wwwroot\images\avatars\veronika.jpg" />
+    <None Include="wwwroot\images\b5885ea3-8ab9-4c42-b4aa-6195541f6958.jpg" />
+    <None Include="wwwroot\images\bronze.jpg" />
+    <None Include="wwwroot\images\bronze.png" />
+    <None Include="wwwroot\images\gold.png" />
+    <None Include="wwwroot\images\gold1.png" />
+    <None Include="wwwroot\images\icons\favicon.ico" />
+    <None Include="wwwroot\images\loading.gif" />
+    <None Include="wwwroot\images\NF.jpg" />
+    <None Include="wwwroot\images\products\image-aqua.png" />
+    <None Include="wwwroot\images\products\image-rose.png" />
+    <None Include="wwwroot\images\products\image-steel.png" />
+    <None Include="wwwroot\images\products\image-yellow.png" />
+    <None Include="wwwroot\images\products\image.png" />
+    <None Include="wwwroot\images\silver.jpg" />
+    <None Include="wwwroot\images\silver.png" />
+    <None Include="wwwroot\images\tick.png" />
+    <None Include="wwwroot\js\devAjax.js" />
+    <None Include="wwwroot\js\JSXTransformer.js" />
+    <None Include="wwwroot\js\main.js" />
+    <None Include="wwwroot\js\react.js" />
+    <None Include="wwwroot\js\seed.js" />
+    <None Include="wwwroot\js\Tutorial.jsx" />
+    <None Include="wwwroot\semantic-dist\components\accordion.css" />
+    <None Include="wwwroot\semantic-dist\components\accordion.js" />
+    <None Include="wwwroot\semantic-dist\components\accordion.min.css" />
+    <None Include="wwwroot\semantic-dist\components\accordion.min.js" />
+    <None Include="wwwroot\semantic-dist\components\ad.css" />
+    <None Include="wwwroot\semantic-dist\components\ad.min.css" />
+    <None Include="wwwroot\semantic-dist\components\api.js" />
+    <None Include="wwwroot\semantic-dist\components\api.min.js" />
+    <None Include="wwwroot\semantic-dist\components\breadcrumb.css" />
+    <None Include="wwwroot\semantic-dist\components\breadcrumb.min.css" />
+    <None Include="wwwroot\semantic-dist\components\button.css" />
+    <None Include="wwwroot\semantic-dist\components\button.min.css" />
+    <None Include="wwwroot\semantic-dist\components\card.css" />
+    <None Include="wwwroot\semantic-dist\components\card.min.css" />
+    <None Include="wwwroot\semantic-dist\components\checkbox.css" />
+    <None Include="wwwroot\semantic-dist\components\checkbox.js" />
+    <None Include="wwwroot\semantic-dist\components\checkbox.min.css" />
+    <None Include="wwwroot\semantic-dist\components\checkbox.min.js" />
+    <None Include="wwwroot\semantic-dist\components\comment.css" />
+    <None Include="wwwroot\semantic-dist\components\comment.min.css" />
+    <None Include="wwwroot\semantic-dist\components\container.css" />
+    <None Include="wwwroot\semantic-dist\components\container.min.css" />
+    <None Include="wwwroot\semantic-dist\components\dimmer.css" />
+    <None Include="wwwroot\semantic-dist\components\dimmer.js" />
+    <None Include="wwwroot\semantic-dist\components\dimmer.min.css" />
+    <None Include="wwwroot\semantic-dist\components\dimmer.min.js" />
+    <None Include="wwwroot\semantic-dist\components\divider.css" />
+    <None Include="wwwroot\semantic-dist\components\divider.min.css" />
+    <None Include="wwwroot\semantic-dist\components\dropdown.css" />
+    <None Include="wwwroot\semantic-dist\components\dropdown.js" />
+    <None Include="wwwroot\semantic-dist\components\dropdown.min.css" />
+    <None Include="wwwroot\semantic-dist\components\dropdown.min.js" />
+    <None Include="wwwroot\semantic-dist\components\embed.css" />
+    <None Include="wwwroot\semantic-dist\components\embed.js" />
+    <None Include="wwwroot\semantic-dist\components\embed.min.css" />
+    <None Include="wwwroot\semantic-dist\components\embed.min.js" />
+    <None Include="wwwroot\semantic-dist\components\feed.css" />
+    <None Include="wwwroot\semantic-dist\components\feed.min.css" />
+    <None Include="wwwroot\semantic-dist\components\flag.css" />
+    <None Include="wwwroot\semantic-dist\components\flag.min.css" />
+    <None Include="wwwroot\semantic-dist\components\form.css" />
+    <None Include="wwwroot\semantic-dist\components\form.js" />
+    <None Include="wwwroot\semantic-dist\components\form.min.css" />
+    <None Include="wwwroot\semantic-dist\components\form.min.js" />
+    <None Include="wwwroot\semantic-dist\components\grid.css" />
+    <None Include="wwwroot\semantic-dist\components\grid.min.css" />
+    <None Include="wwwroot\semantic-dist\components\header.css" />
+    <None Include="wwwroot\semantic-dist\components\header.min.css" />
+    <None Include="wwwroot\semantic-dist\components\icon.css" />
+    <None Include="wwwroot\semantic-dist\components\icon.min.css" />
+    <None Include="wwwroot\semantic-dist\components\image.css" />
+    <None Include="wwwroot\semantic-dist\components\image.min.css" />
+    <None Include="wwwroot\semantic-dist\components\input.css" />
+    <None Include="wwwroot\semantic-dist\components\input.min.css" />
+    <None Include="wwwroot\semantic-dist\components\item.css" />
+    <None Include="wwwroot\semantic-dist\components\item.min.css" />
+    <None Include="wwwroot\semantic-dist\components\label.css" />
+    <None Include="wwwroot\semantic-dist\components\label.min.css" />
+    <None Include="wwwroot\semantic-dist\components\list.css" />
+    <None Include="wwwroot\semantic-dist\components\list.min.css" />
+    <None Include="wwwroot\semantic-dist\components\loader.css" />
+    <None Include="wwwroot\semantic-dist\components\loader.min.css" />
+    <None Include="wwwroot\semantic-dist\components\menu.css" />
+    <None Include="wwwroot\semantic-dist\components\menu.min.css" />
+    <None Include="wwwroot\semantic-dist\components\message.css" />
+    <None Include="wwwroot\semantic-dist\components\message.min.css" />
+    <None Include="wwwroot\semantic-dist\components\modal.css" />
+    <None Include="wwwroot\semantic-dist\components\modal.js" />
+    <None Include="wwwroot\semantic-dist\components\modal.min.css" />
+    <None Include="wwwroot\semantic-dist\components\modal.min.js" />
+    <None Include="wwwroot\semantic-dist\components\nag.css" />
+    <None Include="wwwroot\semantic-dist\components\nag.js" />
+    <None Include="wwwroot\semantic-dist\components\nag.min.css" />
+    <None Include="wwwroot\semantic-dist\components\nag.min.js" />
+    <None Include="wwwroot\semantic-dist\components\popup.css" />
+    <None Include="wwwroot\semantic-dist\components\popup.js" />
+    <None Include="wwwroot\semantic-dist\components\popup.min.css" />
+    <None Include="wwwroot\semantic-dist\components\popup.min.js" />
+    <None Include="wwwroot\semantic-dist\components\progress.css" />
+    <None Include="wwwroot\semantic-dist\components\progress.js" />
+    <None Include="wwwroot\semantic-dist\components\progress.min.css" />
+    <None Include="wwwroot\semantic-dist\components\progress.min.js" />
+    <None Include="wwwroot\semantic-dist\components\rail.css" />
+    <None Include="wwwroot\semantic-dist\components\rail.min.css" />
+    <None Include="wwwroot\semantic-dist\components\rating.css" />
+    <None Include="wwwroot\semantic-dist\components\rating.js" />
+    <None Include="wwwroot\semantic-dist\components\rating.min.css" />
+    <None Include="wwwroot\semantic-dist\components\rating.min.js" />
+    <None Include="wwwroot\semantic-dist\components\reset.css" />
+    <None Include="wwwroot\semantic-dist\components\reset.min.css" />
+    <None Include="wwwroot\semantic-dist\components\reveal.css" />
+    <None Include="wwwroot\semantic-dist\components\reveal.min.css" />
+    <None Include="wwwroot\semantic-dist\components\search.css" />
+    <None Include="wwwroot\semantic-dist\components\search.js" />
+    <None Include="wwwroot\semantic-dist\components\search.min.css" />
+    <None Include="wwwroot\semantic-dist\components\search.min.js" />
+    <None Include="wwwroot\semantic-dist\components\segment.css" />
+    <None Include="wwwroot\semantic-dist\components\segment.min.css" />
+    <None Include="wwwroot\semantic-dist\components\shape.css" />
+    <None Include="wwwroot\semantic-dist\components\shape.js" />
+    <None Include="wwwroot\semantic-dist\components\shape.min.css" />
+    <None Include="wwwroot\semantic-dist\components\shape.min.js" />
+    <None Include="wwwroot\semantic-dist\components\sidebar.css" />
+    <None Include="wwwroot\semantic-dist\components\sidebar.js" />
+    <None Include="wwwroot\semantic-dist\components\sidebar.min.css" />
+    <None Include="wwwroot\semantic-dist\components\sidebar.min.js" />
+    <None Include="wwwroot\semantic-dist\components\site.css" />
+    <None Include="wwwroot\semantic-dist\components\site.js" />
+    <None Include="wwwroot\semantic-dist\components\site.min.css" />
+    <None Include="wwwroot\semantic-dist\components\site.min.js" />
+    <None Include="wwwroot\semantic-dist\components\state.js" />
+    <None Include="wwwroot\semantic-dist\components\state.min.js" />
+    <None Include="wwwroot\semantic-dist\components\statistic.css" />
+    <None Include="wwwroot\semantic-dist\components\statistic.min.css" />
+    <None Include="wwwroot\semantic-dist\components\step.css" />
+    <None Include="wwwroot\semantic-dist\components\step.min.css" />
+    <None Include="wwwroot\semantic-dist\components\sticky.css" />
+    <None Include="wwwroot\semantic-dist\components\sticky.js" />
+    <None Include="wwwroot\semantic-dist\components\sticky.min.css" />
+    <None Include="wwwroot\semantic-dist\components\sticky.min.js" />
+    <None Include="wwwroot\semantic-dist\components\tab.css" />
+    <None Include="wwwroot\semantic-dist\components\tab.js" />
+    <None Include="wwwroot\semantic-dist\components\tab.min.css" />
+    <None Include="wwwroot\semantic-dist\components\tab.min.js" />
+    <None Include="wwwroot\semantic-dist\components\table.css" />
+    <None Include="wwwroot\semantic-dist\components\table.min.css" />
+    <None Include="wwwroot\semantic-dist\components\transition.css" />
+    <None Include="wwwroot\semantic-dist\components\transition.js" />
+    <None Include="wwwroot\semantic-dist\components\transition.min.css" />
+    <None Include="wwwroot\semantic-dist\components\transition.min.js" />
+    <None Include="wwwroot\semantic-dist\components\visibility.js" />
+    <None Include="wwwroot\semantic-dist\components\visibility.min.js" />
+    <None Include="wwwroot\semantic-dist\semantic.css" />
+    <None Include="wwwroot\semantic-dist\semantic.js" />
+    <None Include="wwwroot\semantic-dist\semantic.min.css" />
+    <None Include="wwwroot\semantic-dist\semantic.min.js" />
+    <None Include="wwwroot\semantic-dist\themes\basic\assets\fonts\icons.eot" />
+    <None Include="wwwroot\semantic-dist\themes\basic\assets\fonts\icons.svg" />
+    <None Include="wwwroot\semantic-dist\themes\basic\assets\fonts\icons.ttf" />
+    <None Include="wwwroot\semantic-dist\themes\basic\assets\fonts\icons.woff" />
+    <None Include="wwwroot\semantic-dist\themes\default\assets\fonts\icons.eot" />
+    <None Include="wwwroot\semantic-dist\themes\default\assets\fonts\icons.svg" />
+    <None Include="wwwroot\semantic-dist\themes\default\assets\fonts\icons.ttf" />
+    <None Include="wwwroot\semantic-dist\themes\default\assets\fonts\icons.woff" />
+    <None Include="wwwroot\semantic-dist\themes\default\assets\fonts\icons.woff2" />
+    <None Include="wwwroot\semantic-dist\themes\default\assets\images\flags.png" />
+    <None Include="wwwroot\semantic-dist\themes\github\assets\fonts\octicons-local.ttf" />
+    <None Include="wwwroot\semantic-dist\themes\github\assets\fonts\octicons.svg" />
+    <None Include="wwwroot\semantic-dist\themes\github\assets\fonts\octicons.ttf" />
+    <None Include="wwwroot\semantic-dist\themes\github\assets\fonts\octicons.woff" />
+    <None Include="wwwroot\semantic-dist\themes\material\assets\fonts\icons.eot" />
+    <None Include="wwwroot\semantic-dist\themes\material\assets\fonts\icons.svg" />
+    <None Include="wwwroot\semantic-dist\themes\material\assets\fonts\icons.ttf" />
+    <None Include="wwwroot\semantic-dist\themes\material\assets\fonts\icons.woff" />
+    <None Include="wwwroot\SliderImages\1.jpg" />
+    <None Include="wwwroot\SliderImages\2.jpg" />
+    <None Include="wwwroot\SliderImages\3.jpg" />
+    <None Include="wwwroot\vendor\animate\animate.css" />
+    <None Include="wwwroot\vendor\animsition\css\animsition.css" />
+    <None Include="wwwroot\vendor\animsition\css\animsition.min.css" />
+    <None Include="wwwroot\vendor\animsition\js\animsition.js" />
+    <None Include="wwwroot\vendor\animsition\js\animsition.min.js" />
+    <None Include="wwwroot\vendor\babel-standalone.js" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\popper.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\popper.min.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\tooltip.js" />
+    <None Include="wwwroot\vendor\countdowntime\countdowntime.js" />
+    <None Include="wwwroot\vendor\css-hamburgers\hamburgers.css" />
+    <None Include="wwwroot\vendor\css-hamburgers\hamburgers.min.css" />
+    <None Include="wwwroot\vendor\daterangepicker\daterangepicker.css" />
+    <None Include="wwwroot\vendor\daterangepicker\daterangepicker.js" />
+    <None Include="wwwroot\vendor\daterangepicker\moment.js" />
+    <None Include="wwwroot\vendor\daterangepicker\moment.min.js" />
+    <None Include="wwwroot\vendor\jquery\jquery-3.2.1.min.js" />
+    <None Include="wwwroot\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <None Include="wwwroot\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <None Include="wwwroot\vendor\react-dom.js" />
+    <None Include="wwwroot\vendor\react.js" />
+    <None Include="wwwroot\vendor\select2\select2.css" />
+    <None Include="wwwroot\vendor\select2\select2.js" />
+    <None Include="wwwroot\vendor\select2\select2.min.css" />
+    <None Include="wwwroot\vendor\select2\select2.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="2.1.1" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreExtension\CoreExtension.csproj" />
+    <ProjectReference Include="..\Extensions\Extensions.csproj" />
+    <ProjectReference Include="..\Utility\Utility.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Account\AccessDenied.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Account\Lockout.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Account\Login.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Account\SignedOut.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Product\Advert.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Product\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Home\Index.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Setting\Weather.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Setting\Knowledge.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\Banner.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\Footer.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\Header.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\IncludeCSS.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\IncludeJS.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\Loading.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\_Layout.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Users\Edit.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\_ViewImports.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\_ViewStart.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Account\AccessDenied.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Account\AccessDenied.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Account\Lockout.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Account\Login.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Account\SignedOut.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Account\Lockout.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Account\Login.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Account\SignedOut.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PersianDate">
+      <HintPath>bin\Debug\netcoreapp2.1\PersianDate.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

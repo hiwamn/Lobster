@@ -1,0 +1,608 @@
+﻿@model IndexModel
+
+@{string percent = Model.WeekUserEntry[2].Income == 0 ? "∞" : ((Model.WeekUserEntry[1].Income - Model.WeekUserEntry[2].Income)/ Model.WeekUserEntry[2].Income * 100 / Model.WeekUserEntry[2].Income).ToString();}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+                <div class="card-header card-header-warning card-header-icon">
+                    <div class="card-icon">
+                        <i class="material-icons">content_copy</i>
+                    </div>
+                    <p class="card-category">تعداد پاسخها</p>
+                    <h3 class="card-title">
+                        @Model.VoteYearCount 
+                    </h3>
+                </div>
+                <div class="card-footer">
+                    <div class="stats">
+                        <i class="material-icons text-danger">warning</i>
+                        <i class="material-icons">date_range</i>کل پاسخهای ارسالی امسال
+                        @*<a href="#pablo">کل پاسخهای ارسالی امسال</a>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+                <div class="card-header card-header-success card-header-icon">
+                    <div class="card-icon">
+                        <i class="material-icons">store</i>
+                    </div>
+                    <p class="card-category">نظرسنجیها</p>
+                    <h3 class="card-title">@Model.SurveyCount</h3>
+                </div>
+                <div class="card-footer">
+                    <div class="stats">
+                        <i class="material-icons">date_range</i>هم اکنون فعال هستند
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+                <div class="card-header card-header-danger card-header-icon">
+                    <div class="card-icon">
+                        <i class="material-icons">info_outline</i>
+                    </div>
+                    <p class="card-category">تعداد بازدید محصولات</p>
+                    <h3 class="card-title">@Model.YearUserEntryCount</h3>
+                </div>
+                <div class="card-footer">
+                    <div class="stats">
+                        <i class="material-icons">local_offer</i> در سال @DateTime.Now.ToUnix().ToPersianDateLongString().Substring(0, 4)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+                <div class="card-header card-header-info card-header-icon">
+                    <div class="card-icon">
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                    <p class="card-category">تعدا کل کاربران</p>
+                    <h3 class="card-title">@Model.UserCount</h3>
+                </div>
+                <div class="card-footer">
+                    <div class="stats">
+                        <i class="material-icons">update</i> هم‌اکنون
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card card-chart">
+                <div class="card-header card-header-success">
+                    <div class="ct-chart" id="dailySalesChart"></div>
+                </div>
+                @{
+                    int Week = 0;
+                    Model.WeekUserEntry.ForEach(p => Week += (int)p.Income);
+                }
+                <div class="card-body">
+                    <h4 class="card-title">بازدید هفتگی => @Week </h4>
+                    <p class="card-category">
+                        <span class="text-success">
+                            <i class="fa fa-long-arrow-up"></i> @percent %
+                        </span> رشد در بازدید دیروز به پریروز
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <div class="stats">
+                        <i class="material-icons">access_time</i> هم اکنون
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            @{
+                int Month = 0;
+                Model.MonthSales.ForEach(p => Month += (int)p.Income);
+            }
+            <div class="card card-chart">
+                <div class="card-header card-header-warning">
+                    <div class="ct-chart" id="websiteViewsChart"></div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">بازدید ماهانه  => @Month </h4>
+                    <p class="card-category">شش ماه گذشته</p>
+                </div>
+                <div class="card-footer">
+                    <div class="stats">
+                        <i class="material-icons">access_time</i> بررسی بازدید شش ماه گذشته
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            @{
+                int Users = 0;
+                Model.MonthRegister.ForEach(p => Users += int.Parse(p.No));
+            }
+            <div class="card card-chart">
+                <div class="card-header card-header-danger">
+                    <div class="ct-chart" id="completedTasksChart"></div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">ثبت نام ها  => @Users </h4>
+                    <p class="card-category">شش ماه گذشته</p>
+                </div>
+                <div class="card-footer">
+                    <div class="stats">
+                        <i class="material-icons">access_time</i>بررسی ثبت نام های شش ماه گذشته
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <div class="card">
+                <div class="card-header card-header-tabs card-header-primary">
+                    <div class="nav-tabs-navigation">
+                        <div class="nav-tabs-wrapper">
+                            <span class="nav-tabs-title">اعضای تیم:</span>
+                            <ul class="nav nav-tabs" data-tabs="tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#profile" data-toggle="tab">
+                                        <i class="material-icons">bug_report</i> مدیر جایگاه
+                                        <div class="ripple-container"></div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#messages" data-toggle="tab">
+                                        <i class="material-icons">code</i> مدیر پنل
+                                        <div class="ripple-container"></div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#settings" data-toggle="tab">
+                                        <i class="material-icons">cloud</i> مدیر فنی
+                                        <div class="ripple-container"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="profile">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" value="" checked>
+                                                    <span class="form-check-sign">
+                                                        <span class="check"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>کارهای روزانه جایگاه</td>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" title="ویرایش وظیفه" class="btn btn-primary btn-link btn-sm">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" title="حذف" class="btn btn-danger btn-link btn-sm">
+                                                <i class="material-icons">close</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    <span class="form-check-sign">
+                                                        <span class="check"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>بررسی خروجی سیستم؟</td>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" title="ویرایش وظیفه" class="btn btn-primary btn-link btn-sm">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" title="حذف" class="btn btn-danger btn-link btn-sm">
+                                                <i class="material-icons">close</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    <span class="form-check-sign">
+                                                        <span class="check"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            ارجاع نظرسنجی به مدیر پنل
+                                        </td>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" title="ویرایش وظیفه" class="btn btn-primary btn-link btn-sm">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" title="حذف" class="btn btn-danger btn-link btn-sm">
+                                                <i class="material-icons">close</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" value="" checked>
+                                                    <span class="form-check-sign">
+                                                        <span class="check"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>بررسی گزارشات</td>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" title="ویرایش وظیفه" class="btn btn-primary btn-link btn-sm">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" title="حذف" class="btn btn-danger btn-link btn-sm">
+                                                <i class="material-icons">close</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane" id="messages">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" value="" checked>
+                                                    <span class="form-check-sign">
+                                                        <span class="check"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            ارسال نظرسنجی
+                                        </td>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" title="ویرایش وظیفه" class="btn btn-primary btn-link btn-sm">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" title="حذف" class="btn btn-danger btn-link btn-sm">
+                                                <i class="material-icons">close</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    <span class="form-check-sign">
+                                                        <span class="check"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>ارسال اعلانها</td>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" title="ویرایش وظیفه" class="btn btn-primary btn-link btn-sm">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" title="حذف" class="btn btn-danger btn-link btn-sm">
+                                                <i class="material-icons">close</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane" id="settings">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    <span class="form-check-sign">
+                                                        <span class="check"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>مانیتور کردن وضعیت سرور</td>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" title="ویرایش وظیفه" class="btn btn-primary btn-link btn-sm">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" title="حذف" class="btn btn-danger btn-link btn-sm">
+                                                <i class="material-icons">close</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" value="" checked>
+                                                    <span class="form-check-sign">
+                                                        <span class="check"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                           مانیتور کردن سامانه پیامک
+                                        </td>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" title="ویرایش وظیفه" class="btn btn-primary btn-link btn-sm">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" title="حذف" class="btn btn-danger btn-link btn-sm">
+                                                <i class="material-icons">close</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" value="" checked>
+                                                    <span class="form-check-sign">
+                                                        <span class="check"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>بکاپ گیری از دیتابیس</td>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" title="ویرایش وظیفه" class="btn btn-primary btn-link btn-sm">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" title="حذف" class="btn btn-danger btn-link btn-sm">
+                                                <i class="material-icons">close</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class="card">
+                <div class="card-header card-header-warning">
+                    <h4 class="card-title">آمار مشتریان</h4>
+                    <p class="card-category">پنج مشتری که جدیدا ثبت نام کرده اند</p>
+                </div>
+                <div class="card-body table-responsive">
+                    <table class="table table-hover">
+                        <thead class="text-warning">
+                        <th>ردیف</th>
+                        <th>نام</th>
+                        <th>نام خانوادگی</th>
+                        <th>شماره همراه</th>
+                        <th>تاریخ ثبت نام</th>
+                        </thead>
+                        <tbody>
+                            @for (int i = 0; i < Model.Users.Count; i++)
+                            {
+                                var item = Model.Users[i];
+                                <tr>
+                                    <td>
+                                        @(i + 1)
+                                    </td>
+                                    <td>
+                                        @item.Name
+                                    </td>
+                                    <td>
+                                        @item.FamilyName
+                                    </td>
+                                    <td>
+                                        @item.PhoneNumber
+                                    </td>
+
+                                    <td class="text-primary">
+                                        @item.RegisterDate.ToPersianDateLongString()
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <div class="card">
+                <div class="card-header card-header-primary">
+                    <h3 class="card-title">اعلان ها</h3>
+                    <p class="card-category">
+                        ایجاد شده توسط سیستم
+                        @*<a target="_blank" href="https://github.com/mouse0270">Robert McIntosh</a>. لطفا
+                        <a href="http://bootstrap-notify.remabledesigns.com/" target="_blank">مستندات کامل </a> را مشاهده بکنید.*@
+                    </p>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-warning">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="material-icons">close</i>
+                        </button>
+                        <span>
+                           تعداد پیامکها رو به اتمام است
+                        </span>
+                    </div>
+                    <div class="alert alert-primary">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="material-icons">close</i>
+                        </button>
+                        <span>
+                            ارتباط با پایگاه داده قطع است
+                        </span>
+                    </div>
+                    <div class="alert alert-info alert-with-icon" data-notify="container">
+                        <i class="material-icons" data-notify="icon">add_alert</i>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="material-icons">close</i>
+                        </button>
+                        <span data-notify="پیام">تعداد باردیدها در این هفته کاهش داشته است</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class="card card-profile">
+                <div class="card-avatar">
+                    <a href="#pablo">
+                        <img class="img" src="../assets/img/faces/marc.jpg" />
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-category text-gray">مدیر پنل</h6>
+                    <h4 class="card-title">مدیر پنل @PanelData.Title</h4>
+                    <p class="card-description">
+                        توضیحات مختصری درباره مدیر پنل اینجا داده می شود
+                    </p>
+                    <a href="/" class="btn btn-primary btn-round">دنبال‌کردن</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+        $(document).ready(function () {
+            initDashboardPageCharts();
+
+    });
+    $(window).resize(function () {
+        md.initSidebarsCheck();
+
+        // reset the seq for charts drawing animations
+        seq = seq2 = 0;
+
+        setTimeout(function() {
+            initDashboardPageCharts();
+        }, 500);
+    });
+
+        function initDashboardPageCharts() {
+            if ($('#dailySalesChart').length != 0 || $('#completedTasksChart').length != 0 || $('#websiteViewsChart').length != 0) {
+                /* ----------==========     Daily Sales Chart initialization    ==========---------- */
+            
+
+                dataDailySalesChart = {
+                    labels: ['@Model.WeekUserEntry[0].Day', '@Model.WeekUserEntry[1].Day', '@Model.WeekUserEntry[2].Day', '@Model.WeekUserEntry[3].Day', '@Model.WeekUserEntry[4].Day', '@Model.WeekUserEntry[5].Day', '@Model.WeekUserEntry[6].Day'],
+                    series: [
+                        ['@Model.WeekUserEntry[0].Income', '@Model.WeekUserEntry[1].Income', '@Model.WeekUserEntry[2].Income', '@Model.WeekUserEntry[3].Income', '@Model.WeekUserEntry[4].Income', '@Model.WeekUserEntry[5].Income', '@Model.WeekUserEntry[6].Income']
+                    ]
+                };
+
+                optionsDailySalesChart = {
+                    lineSmooth: Chartist.Interpolation.cardinal({
+                        tension: 0
+                    }),
+                    low: 0,
+                    high: @Model.WeekUserEntry.Max(p=>p.Income), // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+                    chartPadding: {
+                        top: 0,
+                        right: 0,
+                        bottom: 0,
+                        left: 0
+                    },
+                }
+
+                var dailySalesChart = new Chartist.Line('#dailySalesChart', dataDailySalesChart, optionsDailySalesChart);
+
+                md.startAnimationForLineChart(dailySalesChart);
+
+
+                /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
+
+                dataCompletedTasksChart = {
+                    labels: ['@Model.MonthSales[0].Month', '@Model.MonthSales[1].Month', '@Model.MonthSales[2].Month', '@Model.MonthSales[3].Month', '@Model.MonthSales[4].Month', '@Model.MonthSales[5].Month'],
+                    series: [
+                        ['@Model.MonthRegister[0].No', '@Model.MonthRegister[1].No', '@Model.MonthRegister[2].No', '@Model.MonthRegister[3].No', '@Model.MonthRegister[4].No', '@Model.MonthRegister[5].No']
+                    ]
+                };
+
+                optionsCompletedTasksChart = {
+                    lineSmooth: Chartist.Interpolation.cardinal({
+                        tension: 0
+                    }),
+                    low: 0,
+                    high: @Model.MonthRegister.Max(p => p.No), // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+                    chartPadding: {
+                        top: 0,
+                        right: 0,
+                        bottom: 0,
+                        left: 0
+                    }
+                }
+
+                var completedTasksChart = new Chartist.Line('#completedTasksChart', dataCompletedTasksChart, optionsCompletedTasksChart);
+
+                // start animation for the Completed Tasks Chart - Line Chart
+                md.startAnimationForLineChart(completedTasksChart);
+
+
+                /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
+
+                var dataWebsiteViewsChart = {
+                    labels: ['@Model.MonthSales[0].Month', '@Model.MonthSales[1].Month', '@Model.MonthSales[2].Month', '@Model.MonthSales[3].Month', '@Model.MonthSales[4].Month', '@Model.MonthSales[5].Month'],
+                    series: [
+                        ['@Model.MonthSales[0].Income', '@Model.MonthSales[1].Income', '@Model.MonthSales[2].Income', '@Model.MonthSales[3].Income', '@Model.MonthSales[4].Income', '@Model.MonthSales[5].Income']
+
+                    ]
+                };
+                var optionsWebsiteViewsChart = {
+                    axisX: {
+                        showGrid: false
+                    },
+                    low: 0,
+                    high: @Model.MonthSales.Max(p => p.Income),
+                    chartPadding: {
+                        top: 0,
+                        right: 5,
+                        bottom: 0,
+                        left: 0
+                    }
+                };
+                var responsiveOptions = [
+                    ['screen and (max-width: 640px)', {
+                        seriesBarDistance: 5,
+                        axisX: {
+                            labelInterpolationFnc: function (value) {
+                                return value[0];
+                            }
+                        }
+                    }]
+                ];
+                var websiteViewsChart = Chartist.Bar('#websiteViewsChart', dataWebsiteViewsChart, optionsWebsiteViewsChart, responsiveOptions);
+
+                //start animation for the Emails Subscription Chart
+                md.startAnimationForBarChart(websiteViewsChart);
+            }
+        }
+</script>

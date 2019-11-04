@@ -1,0 +1,60 @@
+﻿@model RegisterProductModel
+<style>
+    .placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: red;
+}
+</style>
+<div class="card" style="width:50%;margin:0 auto;">
+    <form asp-action="Create" asp-controller="Station">
+        <input asp-for="Id" type="hidden" class="form-control" placeholder="آگهی جدید" id="NewAd" />
+        <div class="card-header card-header-primary m-4">
+            <h4 class="card-title ">آگهی جدید</h4>
+            <p class="card-category"> اینجا آگهی جدید ایجاد کنید</p>
+        </div>
+        <div class="form-group rtl m-4">
+            <input asp-for="Name" type="text" class="form-control  placeholder" placeholder="عنوان" id="Title" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>        
+        <div class="form-group rtl m-4">
+            <input asp-for="Name" type="text" class="form-control" placeholder="توضیحات" id="Description" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group rtl m-4">
+            <input asp-for="Name" type="text" class="form-control" placeholder="لینک" id="Link" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group rtl m-4">
+            <input asp-for="Name" type="text" class="form-control" placeholder="نوع" id="Type" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group rtl m-4">
+            <input asp-for="Name" type="text" class="form-control" placeholder="خواهان/مالک" id="IsForSale" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group rtl m-4">
+            <input asp-for="Name" type="text" class="form-control" placeholder="استان" id="Province" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group rtl m-4">
+            <input asp-for="Name" type="text" class="form-control" placeholder="شهر" id="City" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group rtl m-4">
+            <input asp-for="Name" type="text" class="form-control" placeholder="قیمت" id="Price" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+      
+
+        <div class="form-group m-4">
+            <button type="submit" class="btn btn-primary">ذخیره</button>
+        </div>
+    </form>
+</div>

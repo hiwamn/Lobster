@@ -1,0 +1,70 @@
+C:\Users\Developer151\source\repos\InYaOon\Extensions\bin\Debug\netstandard2.0\Extensions.deps.json
+C:\Users\Developer151\source\repos\InYaOon\Extensions\bin\Debug\netstandard2.0\Extensions.dll
+C:\Users\Developer151\source\repos\InYaOon\Extensions\obj\Debug\netstandard2.0\Extensions.csprojAssemblyReference.cache
+C:\Users\Developer151\source\repos\InYaOon\Extensions\obj\Debug\netstandard2.0\Extensions.csproj.CoreCompileInputs.cache
+C:\Users\Developer151\source\repos\InYaOon\Extensions\obj\Debug\netstandard2.0\Extensions.AssemblyInfoInputs.cache
+C:\Users\Developer151\source\repos\InYaOon\Extensions\obj\Debug\netstandard2.0\Extensions.AssemblyInfo.cs
+C:\Users\Developer151\source\repos\InYaOon\Extensions\obj\Debug\netstandard2.0\Extensions.csproj.CopyComplete
+C:\Users\Developer151\source\repos\InYaOon\Extensions\bin\Debug\netstandard2.0\Extensions.pdb
+C:\Users\Developer151\source\repos\InYaOon\Extensions\obj\Debug\netstandard2.0\Extensions.dll
+C:\Users\Developer151\source\repos\InYaOon\Extensions\obj\Debug\netstandard2.0\Extensions.pdb
+C:\Projects\InYaOon\Extensions\bin\Debug\netstandard2.0\Extensions.deps.json
+C:\Projects\InYaOon\Extensions\bin\Debug\netstandard2.0\Extensions.dll
+C:\Projects\InYaOon\Extensions\bin\Debug\netstandard2.0\Extensions.pdb
+C:\Projects\InYaOon\Extensions\obj\Debug\netstandard2.0\Extensions.csprojAssemblyReference.cache
+C:\Projects\InYaOon\Extensions\obj\Debug\netstandard2.0\Extensions.csproj.CoreCompileInputs.cache
+C:\Projects\InYaOon\Extensions\obj\Debug\netstandard2.0\Extensions.AssemblyInfoInputs.cache
+C:\Projects\InYaOon\Extensions\obj\Debug\netstandard2.0\Extensions.AssemblyInfo.cs
+C:\Projects\InYaOon\Extensions\obj\Debug\netstandard2.0\Extensions.csproj.CopyComplete
+C:\Projects\InYaOon\Extensions\obj\Debug\netstandard2.0\Extensions.dll
+C:\Projects\InYaOon\Extensions\obj\Debug\netstandard2.0\Extensions.pdb
+C:\Users\Developer151\source\repos\Germany\Extensions\bin\Debug\netstandard2.0\Extensions.deps.json
+C:\Users\Developer151\source\repos\Germany\Extensions\bin\Debug\netstandard2.0\Extensions.dll
+C:\Users\Developer151\source\repos\Germany\Extensions\bin\Debug\netstandard2.0\Extensions.pdb
+C:\Users\Developer151\source\repos\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.csprojAssemblyReference.cache
+C:\Users\Developer151\source\repos\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.csproj.CoreCompileInputs.cache
+C:\Users\Developer151\source\repos\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.AssemblyInfoInputs.cache
+C:\Users\Developer151\source\repos\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.AssemblyInfo.cs
+C:\Users\Developer151\source\repos\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.csproj.CopyComplete
+C:\Users\Developer151\source\repos\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.dll
+C:\Users\Developer151\source\repos\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.pdb
+C:\Projects\Germany\Extensions\bin\Debug\netstandard2.0\Extensions.deps.json
+C:\Projects\Germany\Extensions\bin\Debug\netstandard2.0\Extensions.dll
+C:\Projects\Germany\Extensions\bin\Debug\netstandard2.0\Extensions.pdb
+C:\Projects\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.csproj.CoreCompileInputs.cache
+C:\Projects\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.AssemblyInfoInputs.cache
+C:\Projects\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.AssemblyInfo.cs
+C:\Projects\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.csproj.CopyComplete
+C:\Projects\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.dll
+C:\Projects\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.pdb
+C:\Projects\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.csprojAssemblyReference.cache
+F:\New folder\Germany\Extensions\bin\Debug\netstandard2.0\Extensions.deps.json
+F:\New folder\Germany\Extensions\bin\Debug\netstandard2.0\Extensions.dll
+F:\New folder\Germany\Extensions\bin\Debug\netstandard2.0\Extensions.pdb
+F:\New folder\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.csprojAssemblyReference.cache
+F:\New folder\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.csproj.CoreCompileInputs.cache
+F:\New folder\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.AssemblyInfoInputs.cache
+F:\New folder\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.AssemblyInfo.cs
+F:\New folder\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.csproj.CopyComplete
+F:\New folder\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.dll
+F:\New folder\Germany\Extensions\obj\Debug\netstandard2.0\Extensions.pdb
+C:\Users\Developer151\source\repos\Amlak\Extensions\bin\Debug\netstandard2.0\Extensions.deps.json
+C:\Users\Developer151\source\repos\Amlak\Extensions\bin\Debug\netstandard2.0\Extensions.dll
+C:\Users\Developer151\source\repos\Amlak\Extensions\bin\Debug\netstandard2.0\Extensions.pdb
+C:\Users\Developer151\source\repos\Amlak\Extensions\obj\Debug\netstandard2.0\Extensions.csprojAssemblyReference.cache
+C:\Users\Developer151\source\repos\Amlak\Extensions\obj\Debug\netstandard2.0\Extensions.csproj.CoreCompileInputs.cache
+C:\Users\Developer151\source\repos\Amlak\Extensions\obj\Debug\netstandard2.0\Extensions.AssemblyInfoInputs.cache
+C:\Users\Developer151\source\repos\Amlak\Extensions\obj\Debug\netstandard2.0\Extensions.AssemblyInfo.cs
+C:\Users\Developer151\source\repos\Amlak\Extensions\obj\Debug\netstandard2.0\Extensions.csproj.CopyComplete
+C:\Users\Developer151\source\repos\Amlak\Extensions\obj\Debug\netstandard2.0\Extensions.dll
+C:\Users\Developer151\source\repos\Amlak\Extensions\obj\Debug\netstandard2.0\Extensions.pdb
+C:\Users\Developer151\source\repos\Mountain\Extensions\bin\Debug\netstandard2.0\Extensions.deps.json
+C:\Users\Developer151\source\repos\Mountain\Extensions\bin\Debug\netstandard2.0\Extensions.dll
+C:\Users\Developer151\source\repos\Mountain\Extensions\bin\Debug\netstandard2.0\Extensions.pdb
+C:\Users\Developer151\source\repos\Mountain\Extensions\obj\Debug\netstandard2.0\Extensions.csprojAssemblyReference.cache
+C:\Users\Developer151\source\repos\Mountain\Extensions\obj\Debug\netstandard2.0\Extensions.csproj.CoreCompileInputs.cache
+C:\Users\Developer151\source\repos\Mountain\Extensions\obj\Debug\netstandard2.0\Extensions.AssemblyInfoInputs.cache
+C:\Users\Developer151\source\repos\Mountain\Extensions\obj\Debug\netstandard2.0\Extensions.AssemblyInfo.cs
+C:\Users\Developer151\source\repos\Mountain\Extensions\obj\Debug\netstandard2.0\Extensions.csproj.CopyComplete
+C:\Users\Developer151\source\repos\Mountain\Extensions\obj\Debug\netstandard2.0\Extensions.dll
+C:\Users\Developer151\source\repos\Mountain\Extensions\obj\Debug\netstandard2.0\Extensions.pdb

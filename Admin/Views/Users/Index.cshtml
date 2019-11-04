@@ -1,0 +1,140 @@
+﻿
+@model List<User>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalConfirmDelete">
+        Launch
+        modal
+    </button>
+<div class="row">
+    <div class="col-md-12" />
+    <div class="card">
+        <input type="text" id="search" oninput="change()" class="form-control" placeholder="جستجو در مشتریان" />
+    </div>
+    <div class="card">
+        <div class="card-header card-header-primary">
+            <h4 class="card-title ">لیست مشتریان</h4>
+            <p class="card-category"> اینجا لیست مشتریان را مشاهده می کنید</p>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive" style="overflow-x:auto;direction:rtl;">
+                <table class="table text-center" id="tab">
+                    <tr class=" text-primary" id="head">
+                        <td>
+                            شماره
+                        </td>
+                        <td>
+                            نام
+                        </td>
+                        <td>
+                            نام خانوادگی
+                        </td>
+                        <td>
+                            موبایلA
+                        </td>
+
+                        <td>
+                            تاریخ ثبت نام
+                        </td>
+                        <td>
+                            وضعیت
+                        </td>
+                        <td>
+                            تغییر وضعیت
+                        </td>
+                        <td>
+                            ویراش
+                        </td>
+                       
+
+
+
+
+                    </tr>
+                    @for (int i = 0; i < Model.Count; i++)
+                    {
+                        var item = Model[i];
+                <tr>
+                    <td>
+                        @(i + 1)
+                    </td>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.FamilyName
+                    </td>
+                    <td>
+                        @item.PhoneNumber
+                    </td>
+
+                    <td>
+                        @item.RegisterDate.ToPersianDateLongString()
+                    </td>
+                    @{var ac = "active" + item.Id.ToString();}
+                    <td id="@ac">
+                        @{
+                            var text = item.PhoneNumberConfirmed ? "فعال" : "غیر فعال";
+                        }
+                        @text
+                    </td>
+                    <td>
+                        <input type="button" class="btn btn-primary"
+                               value="تغییر وضعیت"
+                               onclick="changeStatus('@item.Id')" />
+                    </td>
+                    <td>
+                        <input type="button" class="btn btn-facebook"
+                               value="ویرایش"
+                               onclick="location.href='@Url.Action("Edit", "Users", new { UserId = item.Id })'" />
+                    </td>
+
+                </tr>
+                    }
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    function change() {
+
+        var filter, table, tr;
+
+        filter = document.getElementById("search").value;
+        table = document.getElementById("tab");
+        tr = table.getElementsByTagName("tr");
+
+        for (var i = 0; i < tr.length; i++) {                       
+                if (tr[i].innerText.indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+
+                } else if (tr[i].id != 'head') {
+                    tr[i].style.display = "none";
+                }            
+        }
+    }
+
+    function changeStatus(Id) {
+            var sendData = { Id: Id };
+        AJX.post("/Users/ChangeStatus", sendData, function (ok) {
+            if (ok == '@Messages.ErenOK') {
+                var ac = document.getElementById("active" + Id);
+                if (ac.innerHTML == "فعال")
+                    ac.innerHTML = "غیرفعال";
+                else
+                    ac.innerHTML = "فعال";
+            }
+            else {
+                alert('خطایی پیش آمده، لطفا با پشتیبان تماس بگیرید');
+            }
+        });
+    }
+
+
+</script>
+
+

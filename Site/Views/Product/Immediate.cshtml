@@ -1,0 +1,44 @@
+﻿@model List<ProductDto>
+
+
+<div id="main">
+    <div class="inner">
+
+        <div class="thumbnails" id="thumbnails">
+
+            @foreach (var item in Model)
+            {
+                @await Html.PartialAsync("Advert", new BoxModel { Description = item.Description, ImageUrl = item.Images.Count > 0 ? item.Images.FirstOrDefault() : "/assets/img/NF.jpg", OldPrice = "", RegisterLink = "", ShowLink = "", Title = item.Title });
+            }
+
+
+        </div>
+
+    </div>
+</div>
+@Html.Partial("../../Views/Shared/Loading.cshtml");
+
+<script type="text/javascript">
+    var BlockNumber = 2;
+    var IsAdvertisement = 'null', IsImmediate = 'true', IsSpecial = 'null', ProductCategoryId = 'null';
+    var NoMoreData = false;
+    var inProgress = false;
+
+    $(window).scroll(function () {
+        var check = $(window).scrollTop() == $(document).height() - $(window).height() && !NoMoreData && !inProgress;
+        if (check) {
+            inProgress = true;
+            $("#loadingDiv").show();
+
+            $.post("@Url.Action("Scroll", "Product")", { "BlockNumber": BlockNumber,"IsAdvertisement" : IsAdvertisement, "IsImmediate" : IsImmediate, "IsSpecial" : IsSpecial, "ProductCategoryId" : ProductCategoryId },
+                    function (data) {
+                        BlockNumber = BlockNumber + 1;
+                        NoMoreData = data.noMoreData;
+
+                        $("#thumbnails").append(data.htmlString);
+                        $("#loadingDiv").hide();
+                        inProgress = false;
+                    });
+        }
+    });
+</script>

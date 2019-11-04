@@ -1,0 +1,27 @@
+﻿{
+  "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
+  "Version": "15.0.30515.712",
+  "GettingStartedDocument": {
+    "Uri": "https://go.microsoft.com/fwlink/?linkid=858517"
+  },
+  "ExtendedData": {
+    "inputs": [
+      "http://sms.trez.ir/TrezSmsService.asmx"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "namespaceMappings": [
+      "*, Trez"
+    ],
+    "references": [
+      "C:\\Users\\Developer151\\source\\repos\\Germany\\Utility\\bin\\Debug\\netstandard2.0\\Extensions.dll",
+      "C:\\Users\\Developer151\\source\\repos\\Germany\\Utility\\bin\\Debug\\netstandard2.0\\PersianDate.dll",
+      "Newtonsoft.Json, {Newtonsoft.Json, 12.0.2}",
+      "System.ComponentModel.Annotations, {System.ComponentModel.Annotations, 4.5.0}"
+    ],
+    "targetFramework": "netstandard2.0",
+    "typeReuseMode": "All"
+  }
+}

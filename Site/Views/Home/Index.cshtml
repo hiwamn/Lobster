@@ -1,0 +1,40 @@
+﻿@model HomePageItemsDto
+
+
+<div id="main">
+    <div class="inner">
+
+        <div class="thumbnails" id="Ad">
+
+            @foreach (var item in Model.Ad)
+            {
+                @await Html.PartialAsync("Advert", new BoxModel { Description = item.Description, ImageUrl = item.Images.Count > 0 ? item.Images.FirstOrDefault() : "/assets/img/NF.jpg", OldPrice = "", RegisterLink = "", ShowLink = "", Title = item.Title });
+            }
+
+
+        </div>
+
+        <div class="thumbnails" id="Sp">
+
+            @foreach (var item in Model.Special)
+            {
+                @await Html.PartialAsync("Advert", new BoxModel { Description = item.Description, ImageUrl = item.Images.Count > 0 ? item.Images.FirstOrDefault() : "/assets/img/NF.jpg", OldPrice = "", RegisterLink = "", ShowLink = "", Title = item.Title });
+            }
+
+
+        </div>
+
+        @*<div class="thumbnails" id="Im">
+
+            @foreach (var item in Model.Immediate)
+            {
+                @await Html.PartialAsync("Advert", new BoxModel { Description = item.Description, ImageUrl = item.Images.Count > 0 ? item.Images.FirstOrDefault() : "/assets/img/NF.jpg", OldPrice = "", RegisterLink = "", ShowLink = "", Title = item.Title });
+            }
+
+
+        </div>*@
+
+    </div>
+</div>
+@Html.Partial("../../Views/Shared/Loading.cshtml");
+

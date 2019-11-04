@@ -1,0 +1,149 @@
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.csprojAssemblyReference.cache
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.csproj.CoreCompileInputs.cache
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.RazorAssemblyInfo.cache
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.RazorAssemblyInfo.cs
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.AssemblyInfoInputs.cache
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.AssemblyInfo.cs
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.deps.json
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.runtimeconfig.json
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.runtimeconfig.dev.json
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.dll
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.pdb
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.RazorTargetAssemblyInfo.cache
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.dll
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.pdb
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Dal.Ef.dll
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Entities.dll
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Dal.Ef.pdb
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Entities.pdb
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.csproj.CopyComplete
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Contract.dll
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Extensions.dll
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Utility.dll
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\PersianDate.dll
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Contract.pdb
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Extensions.pdb
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Utility.pdb
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\ApplicationServices.dll
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\HandlPdf.dll
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\ApplicationServices.pdb
+C:\Users\Developer151\source\repos\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\HandlPdf.pdb
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.deps.json
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.runtimeconfig.json
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.runtimeconfig.dev.json
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.dll
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\ApplicationServices.dll
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Dal.Ef.dll
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Contract.dll
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Entities.dll
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Extensions.dll
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\HandlPdf.dll
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Utility.dll
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Interop.Acrobat.dll
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\ApplicationServices.pdb
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Dal.Ef.pdb
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Contract.pdb
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Entities.pdb
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Extensions.pdb
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\HandlPdf.pdb
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Utility.pdb
+C:\Projects\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.csprojAssemblyReference.cache
+C:\Projects\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.csproj.CoreCompileInputs.cache
+C:\Projects\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.RazorAssemblyInfo.cache
+C:\Projects\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.RazorAssemblyInfo.cs
+C:\Projects\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.AssemblyInfoInputs.cache
+C:\Projects\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.AssemblyInfo.cs
+C:\Projects\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.RazorTargetAssemblyInfo.cache
+C:\Projects\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.csproj.CopyComplete
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.pdb
+C:\Projects\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.dll
+C:\Projects\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.pdb
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\CoreExtension.dll
+C:\Projects\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\CoreExtension.pdb
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\ApplicationServices.dll
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\CoreExtension.dll
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Dal.Ef.dll
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Contract.dll
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Entities.dll
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Extensions.dll
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\HandlPdf.dll
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Utility.dll
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Interop.Acrobat.dll
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\ApplicationServices.pdb
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\CoreExtension.pdb
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Dal.Ef.pdb
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Contract.pdb
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Entities.pdb
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Extensions.pdb
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\HandlPdf.pdb
+F:\New folder\Germany\MobileEndpoint\bin\Debug\netcoreapp2.1\Utility.pdb
+F:\New folder\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.csprojAssemblyReference.cache
+F:\New folder\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.csproj.CoreCompileInputs.cache
+F:\New folder\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.RazorAssemblyInfo.cache
+F:\New folder\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.RazorAssemblyInfo.cs
+F:\New folder\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.AssemblyInfoInputs.cache
+F:\New folder\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.AssemblyInfo.cs
+F:\New folder\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.RazorTargetAssemblyInfo.cache
+F:\New folder\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.csproj.CopyComplete
+F:\New folder\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.dll
+F:\New folder\Germany\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.pdb
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.deps.json
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.runtimeconfig.json
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.runtimeconfig.dev.json
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.dll
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.pdb
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\ApplicationServices.dll
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\CoreExtension.dll
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\Dal.Ef.dll
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Contract.dll
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Entities.dll
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\Extensions.dll
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\Utility.dll
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\ApplicationServices.pdb
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\CoreExtension.pdb
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\Dal.Ef.pdb
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Contract.pdb
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Entities.pdb
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\Extensions.pdb
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\bin\Debug\netcoreapp2.1\Utility.pdb
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.csprojAssemblyReference.cache
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.csproj.CoreCompileInputs.cache
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.RazorAssemblyInfo.cache
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.RazorAssemblyInfo.cs
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.AssemblyInfoInputs.cache
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.AssemblyInfo.cs
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.RazorTargetAssemblyInfo.cache
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.csproj.CopyComplete
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.dll
+C:\Users\Developer151\source\repos\Amlak\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.pdb
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.deps.json
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.runtimeconfig.json
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.runtimeconfig.dev.json
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.dll
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\MobileEndpoint.pdb
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\ApplicationServices.dll
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\CoreExtension.dll
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\Dal.Ef.dll
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Contract.dll
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Entities.dll
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\Dto.dll
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\Extensions.dll
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\Utility.dll
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\ApplicationServices.pdb
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\CoreExtension.pdb
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\Dal.Ef.pdb
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\Dto.pdb
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Contract.pdb
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\Domain.Entities.pdb
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\Extensions.pdb
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\bin\Debug\netcoreapp2.1\Utility.pdb
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.csprojAssemblyReference.cache
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.csproj.CoreCompileInputs.cache
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.RazorAssemblyInfo.cache
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.RazorAssemblyInfo.cs
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.AssemblyInfoInputs.cache
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.AssemblyInfo.cs
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.RazorTargetAssemblyInfo.cache
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.csproj.CopyComplete
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.dll
+C:\Users\Developer151\source\repos\Mountain\MobileEndpoint\obj\Debug\netcoreapp2.1\MobileEndpoint.pdb

@@ -1,0 +1,107 @@
+﻿@model SettingModel
+
+
+    <div class="card">
+        <form asp-action="Index" asp-controller="Setting" onsubmit="return Check()">
+            
+
+            <div class="card-header card-header-primary m-4">
+                <h4 class="card-title ">آیتمها</h4>
+                <p class="card-category"> اینجا لیست آیتمها را مشاهده می کنید</p>
+            </div>
+            <div class="card-body table-responsive">
+                @*@Html.HiddenFor(p => p.)*@
+                <div class="form-group rtl m-4">
+                    <input asp-for="AdDelay" type="text" class="form-control" placeholder="تاخیر اسلایدر" />
+                    <span asp-validation-for="AdDelay" class="text-danger"></span>
+                </div>
+                @*@Html.HiddenFor(p => p.)*@
+                <div class="form-group rtl m-4">
+                    <input asp-for="AdNo" type="text" class="form-control" placeholder="تعداد آگهی" />
+                    <span asp-validation-for="AdNo" class="text-danger"></span>
+                </div>
+                <div class="form-group rtl m-4">
+                    <input asp-for="AdPrice" type="text" class="form-control" placeholder="قیمت آگهی" />
+                    <span asp-validation-for="AdPrice" class="text-danger"></span>
+                </div>
+                <div class="form-group rtl m-4">
+                    <input asp-for="ImmediateNo" type="text" class="form-control" placeholder="تعداد محصول فوری" />
+                    <span asp-validation-for="ImmediateNo" class="text-danger"></span>
+                </div>
+                <div class="form-group rtl m-4">
+                    <input asp-for="ImmediateNumberOfDays" type="text" class="form-control" placeholder="تعداد روزهای محصول فوری" />
+                    <span asp-validation-for="ImmediateNumberOfDays" class="text-danger"></span>
+                </div>
+                <div class="form-group rtl m-4">
+                    <input asp-for="ImmediatePrice" type="text" class="form-control" placeholder="قیمت محصول فوری" />
+                    <span asp-validation-for="ImmediatePrice" class="text-danger"></span>
+                </div>
+                <div class="form-group rtl m-4">
+                    <input asp-for="SimplePrice" type="text" class="form-control" placeholder="قیمت محصول ساده" />
+                    <span asp-validation-for="SimplePrice" class="text-danger"></span>
+                </div>
+                <div class="form-group rtl m-4">
+                    <input asp-for="SpecialNo" type="text" class="form-control" placeholder="تعداد محصول ویژه" />
+                    <span asp-validation-for="SpecialNo" class="text-danger"></span>
+                </div>
+                <div class="form-group rtl m-4">
+                    <input asp-for="SpecialNumberOfDays" type="text" class="form-control" placeholder="تعداد روز محصول ویژه" />
+                    <span asp-validation-for="SpecialNumberOfDays" class="text-danger"></span>
+                </div>
+                <div class="form-group rtl m-4">
+                    <input asp-for="SpecialPrice" type="text" class="form-control" placeholder="قیمت محصول ویژه" />
+                    <span asp-validation-for="SpecialPrice" class="text-danger"></span>
+                </div>
+
+
+            </div>
+            @*<div class="col-3 rtl m-4">
+
+                <label><input asp-for="AdNo" type="checkbox" />انتشار</label>
+
+            </div>*@
+            <div class="form-group m-4">
+
+                <button type="submit" class="btn btn-primary">ذخیره</button>
+
+            </div>
+        </form>
+    </div>
+
+
+<script>
+    function AddItem() {
+        var title = document.getElementById('item').value;
+
+        if (title == '') {
+            alert('عنوان خالی است');
+            return;
+        }
+
+        var items = document.getElementById('items');
+        var itemIndex = $("#items input.iHidden").length;
+
+
+
+        var text = '<tr><td><input type="hidden" id="Interests_' + itemIndex + '__Id" value="" class="iHidden"  name= "' + itemIndex + '" /><input  id="Interests1_' + itemIndex + '__Id" value="' + title + '"   name= "Items[' + itemIndex +']" class=" form-control "/></td > <td><button type="button" class="btn btn-primary" onclick="del(event)"> حذف</button></td></tr > ';
+        $("#items").append(text);
+        //items.innerHTML = items.innerHTML + text;
+
+    }
+
+    function Check() {
+        //var x = $('input:hidden').length
+        //if (x < 5) {
+        //    alert("تعداد عناصر نظرسنجی باید حداقل 2 عدد باشد");
+        //    return false;
+        //}
+        //return true;
+    }
+
+    function del(event)
+    {
+        event.currentTarget.parentNode.parentNode.remove();
+    }
+
+
+</script>

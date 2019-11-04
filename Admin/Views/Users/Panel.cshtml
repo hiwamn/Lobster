@@ -1,0 +1,87 @@
+﻿@*<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.min.js"></script>
+    <script src="~/vendor/babel-standalone.js"></script>
+    <script src="@Url.Content("~/1/src/index.jsx")" type="text/babel"
+            data-plugins="transform-class-properties">
+    </script>*@
+@model List<User>
+@*<script>
+    var a = document.getElementById('Bread');
+    var text = '<li class="breadcrumb-item dashboard"><a href="/" style="color:black;">خانه</a></li>';
+    text += '<li class="breadcrumb-item dashboard"><a href="/Users/"  style="color:white;">کاربران</a></li>';
+    
+    a.innerHTML = text;
+</script>*@
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <a asp-action="Create" asp-controller="Users">
+                <button type="button" class="btn btn-primary">جدید</button>
+            </a>
+            <hr />
+        </div>
+        <div class="card">
+            <div class="card-header card-header-primary">
+                <h4 class="card-title ">لیست کاربران</h4>
+                <p class="card-category"> اینجا لیست کاربران را مشاهده می کنید</p>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive" style="overflow-x:auto;direction:rtl;">
+                    <table class="table">
+                        <thead class=" text-primary">
+                        <th>
+                            شماره
+                        </th>
+                        <th>
+                            نام
+                        </th>
+                        <th>
+                            نام خانوادگی
+                        </th>
+                        <th>
+                            موبایل
+                        </th>
+
+                        <th>
+                            تاریخ ثبت نام
+                        </th>
+
+                        
+
+                        <tbody>
+                            @for (int i = 0; i < Model.Count; i++)
+                            {
+                                var item = Model[i];
+                            <tr>
+                                <td>
+                                    @(i + 1)
+                                </td>
+                                <td>
+                                    @item.Name
+                                </td>
+                                <td>
+                                    @item.FamilyName
+                                </td>
+                                <td>
+                                    @item.PhoneNumber
+                                </td>
+
+                                <td class="text-primary">
+                                    @item.RegisterDate.ToPersianDateLongString()
+                                </td>
+                               
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+

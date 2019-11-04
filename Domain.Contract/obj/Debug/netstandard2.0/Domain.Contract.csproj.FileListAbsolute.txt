@@ -1,0 +1,70 @@
+C:\Users\Developer151\source\repos\Germany\Domain.Contract\bin\Debug\netstandard2.0\Domain.Contract.deps.json
+C:\Users\Developer151\source\repos\Germany\Domain.Contract\bin\Debug\netstandard2.0\Domain.Contract.dll
+C:\Users\Developer151\source\repos\Germany\Domain.Contract\bin\Debug\netstandard2.0\Domain.Contract.pdb
+C:\Users\Developer151\source\repos\Germany\Domain.Contract\bin\Debug\netstandard2.0\Domain.Entities.dll
+C:\Users\Developer151\source\repos\Germany\Domain.Contract\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Developer151\source\repos\Germany\Domain.Contract\bin\Debug\netstandard2.0\Domain.Entities.pdb
+C:\Users\Developer151\source\repos\Germany\Domain.Contract\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.xml
+C:\Users\Developer151\source\repos\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.csprojAssemblyReference.cache
+C:\Users\Developer151\source\repos\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.csproj.CoreCompileInputs.cache
+C:\Users\Developer151\source\repos\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.AssemblyInfoInputs.cache
+C:\Users\Developer151\source\repos\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.AssemblyInfo.cs
+C:\Users\Developer151\source\repos\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.csproj.CopyComplete
+C:\Users\Developer151\source\repos\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.dll
+C:\Users\Developer151\source\repos\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.pdb
+C:\Projects\Germany\Domain.Contract\bin\Debug\netstandard2.0\Domain.Contract.deps.json
+C:\Projects\Germany\Domain.Contract\bin\Debug\netstandard2.0\Domain.Contract.dll
+C:\Projects\Germany\Domain.Contract\bin\Debug\netstandard2.0\Domain.Contract.pdb
+C:\Projects\Germany\Domain.Contract\bin\Debug\netstandard2.0\Domain.Entities.dll
+C:\Projects\Germany\Domain.Contract\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Projects\Germany\Domain.Contract\bin\Debug\netstandard2.0\Domain.Entities.pdb
+C:\Projects\Germany\Domain.Contract\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.xml
+C:\Projects\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.csprojAssemblyReference.cache
+C:\Projects\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.csproj.CoreCompileInputs.cache
+C:\Projects\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.AssemblyInfoInputs.cache
+C:\Projects\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.AssemblyInfo.cs
+C:\Projects\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.csproj.CopyComplete
+C:\Projects\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.dll
+C:\Projects\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.pdb
+F:\New folder\Germany\Domain.Contract\bin\Debug\netstandard2.0\Domain.Contract.deps.json
+F:\New folder\Germany\Domain.Contract\bin\Debug\netstandard2.0\Domain.Contract.dll
+F:\New folder\Germany\Domain.Contract\bin\Debug\netstandard2.0\Domain.Contract.pdb
+F:\New folder\Germany\Domain.Contract\bin\Debug\netstandard2.0\Domain.Entities.dll
+F:\New folder\Germany\Domain.Contract\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.dll
+F:\New folder\Germany\Domain.Contract\bin\Debug\netstandard2.0\Domain.Entities.pdb
+F:\New folder\Germany\Domain.Contract\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.xml
+F:\New folder\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.csprojAssemblyReference.cache
+F:\New folder\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.csproj.CoreCompileInputs.cache
+F:\New folder\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.AssemblyInfoInputs.cache
+F:\New folder\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.AssemblyInfo.cs
+F:\New folder\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.csproj.CopyComplete
+F:\New folder\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.dll
+F:\New folder\Germany\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.pdb
+C:\Users\Developer151\source\repos\Amlak\Domain.Contract\bin\Debug\netstandard2.0\Domain.Contract.deps.json
+C:\Users\Developer151\source\repos\Amlak\Domain.Contract\bin\Debug\netstandard2.0\Domain.Contract.dll
+C:\Users\Developer151\source\repos\Amlak\Domain.Contract\bin\Debug\netstandard2.0\Domain.Contract.pdb
+C:\Users\Developer151\source\repos\Amlak\Domain.Contract\bin\Debug\netstandard2.0\Domain.Entities.dll
+C:\Users\Developer151\source\repos\Amlak\Domain.Contract\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Developer151\source\repos\Amlak\Domain.Contract\bin\Debug\netstandard2.0\Domain.Entities.pdb
+C:\Users\Developer151\source\repos\Amlak\Domain.Contract\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.xml
+C:\Users\Developer151\source\repos\Amlak\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.csprojAssemblyReference.cache
+C:\Users\Developer151\source\repos\Amlak\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.csproj.CoreCompileInputs.cache
+C:\Users\Developer151\source\repos\Amlak\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.AssemblyInfoInputs.cache
+C:\Users\Developer151\source\repos\Amlak\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.AssemblyInfo.cs
+C:\Users\Developer151\source\repos\Amlak\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.csproj.CopyComplete
+C:\Users\Developer151\source\repos\Amlak\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.dll
+C:\Users\Developer151\source\repos\Amlak\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.pdb
+C:\Users\Developer151\source\repos\Mountain\Domain.Contract\bin\Debug\netstandard2.0\Domain.Contract.deps.json
+C:\Users\Developer151\source\repos\Mountain\Domain.Contract\bin\Debug\netstandard2.0\Domain.Contract.dll
+C:\Users\Developer151\source\repos\Mountain\Domain.Contract\bin\Debug\netstandard2.0\Domain.Contract.pdb
+C:\Users\Developer151\source\repos\Mountain\Domain.Contract\bin\Debug\netstandard2.0\Domain.Entities.dll
+C:\Users\Developer151\source\repos\Mountain\Domain.Contract\bin\Debug\netstandard2.0\Domain.Entities.pdb
+C:\Users\Developer151\source\repos\Mountain\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.csprojAssemblyReference.cache
+C:\Users\Developer151\source\repos\Mountain\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.csproj.CoreCompileInputs.cache
+C:\Users\Developer151\source\repos\Mountain\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.AssemblyInfoInputs.cache
+C:\Users\Developer151\source\repos\Mountain\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.AssemblyInfo.cs
+C:\Users\Developer151\source\repos\Mountain\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.csproj.CopyComplete
+C:\Users\Developer151\source\repos\Mountain\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.dll
+C:\Users\Developer151\source\repos\Mountain\Domain.Contract\obj\Debug\netstandard2.0\Domain.Contract.pdb
+C:\Users\Developer151\source\repos\Mountain\Domain.Contract\bin\Debug\netstandard2.0\Dto.dll
+C:\Users\Developer151\source\repos\Mountain\Domain.Contract\bin\Debug\netstandard2.0\Dto.pdb

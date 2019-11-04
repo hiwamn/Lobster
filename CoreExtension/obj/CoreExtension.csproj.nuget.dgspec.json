@@ -1,0 +1,556 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Developer151\\source\\repos\\Mountain\\CoreExtension\\CoreExtension.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Developer151\\source\\repos\\Mountain\\ApplicationServices\\ApplicationServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Developer151\\source\\repos\\Mountain\\ApplicationServices\\ApplicationServices.csproj",
+        "projectName": "ApplicationServices",
+        "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\ApplicationServices\\ApplicationServices.csproj",
+        "packagesPath": "C:\\Users\\Developer151\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\ApplicationServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Developer151\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Contract\\Domain.Contract.csproj": {
+                "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Contract\\Domain.Contract.csproj"
+              },
+              "C:\\Users\\Developer151\\source\\repos\\Mountain\\Dto\\Dto.csproj": {
+                "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Dto\\Dto.csproj"
+              },
+              "C:\\Users\\Developer151\\source\\repos\\Mountain\\Utility\\Utility.csproj": {
+                "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Utility\\Utility.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Developer151\\source\\repos\\Mountain\\CoreExtension\\CoreExtension.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Developer151\\source\\repos\\Mountain\\CoreExtension\\CoreExtension.csproj",
+        "projectName": "CoreExtension",
+        "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\CoreExtension\\CoreExtension.csproj",
+        "packagesPath": "C:\\Users\\Developer151\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\CoreExtension\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Developer151\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\Developer151\\source\\repos\\Mountain\\ApplicationServices\\ApplicationServices.csproj": {
+                "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\ApplicationServices\\ApplicationServices.csproj"
+              },
+              "C:\\Users\\Developer151\\source\\repos\\Mountain\\Dal.Ef\\Dal.Ef.csproj": {
+                "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Dal.Ef\\Dal.Ef.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Primitives": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Developer151\\source\\repos\\Mountain\\Dal.Ef\\Dal.Ef.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Dal.Ef\\Dal.Ef.csproj",
+        "projectName": "Dal.Ef",
+        "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Dal.Ef\\Dal.Ef.csproj",
+        "packagesPath": "C:\\Users\\Developer151\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Dal.Ef\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Developer151\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Contract\\Domain.Contract.csproj": {
+                "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Contract\\Domain.Contract.csproj"
+              },
+              "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Entities\\Domain.Entities.csproj": {
+                "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Entities\\Domain.Entities.csproj"
+              },
+              "C:\\Users\\Developer151\\source\\repos\\Mountain\\Dto\\Dto.csproj": {
+                "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Dto\\Dto.csproj"
+              },
+              "C:\\Users\\Developer151\\source\\repos\\Mountain\\Extensions\\Extensions.csproj": {
+                "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Extensions\\Extensions.csproj"
+              },
+              "C:\\Users\\Developer151\\source\\repos\\Mountain\\Utility\\Utility.csproj": {
+                "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Utility\\Utility.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Contract\\Domain.Contract.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Contract\\Domain.Contract.csproj",
+        "projectName": "Domain.Contract",
+        "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Contract\\Domain.Contract.csproj",
+        "packagesPath": "C:\\Users\\Developer151\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Contract\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Developer151\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Entities\\Domain.Entities.csproj": {
+                "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Entities\\Domain.Entities.csproj"
+              },
+              "C:\\Users\\Developer151\\source\\repos\\Mountain\\Dto\\Dto.csproj": {
+                "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Dto\\Dto.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Entities\\Domain.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Entities\\Domain.Entities.csproj",
+        "projectName": "Domain.Entities",
+        "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Entities\\Domain.Entities.csproj",
+        "packagesPath": "C:\\Users\\Developer151\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Developer151\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Developer151\\source\\repos\\Mountain\\Dto\\Dto.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Dto\\Dto.csproj",
+        "projectName": "Dto",
+        "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Dto\\Dto.csproj",
+        "packagesPath": "C:\\Users\\Developer151\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Dto\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Developer151\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Entities\\Domain.Entities.csproj": {
+                "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Domain.Entities\\Domain.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Developer151\\source\\repos\\Mountain\\Extensions\\Extensions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Extensions\\Extensions.csproj",
+        "projectName": "Extensions",
+        "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Extensions\\Extensions.csproj",
+        "packagesPath": "C:\\Users\\Developer151\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Extensions\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Developer151\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Developer151\\source\\repos\\Mountain\\Utility\\Utility.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Utility\\Utility.csproj",
+        "projectName": "Utility",
+        "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Utility\\Utility.csproj",
+        "packagesPath": "C:\\Users\\Developer151\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Utility\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Developer151\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Developer151\\source\\repos\\Mountain\\Extensions\\Extensions.csproj": {
+                "projectPath": "C:\\Users\\Developer151\\source\\repos\\Mountain\\Extensions\\Extensions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.VisualBasic": {
+              "target": "Package",
+              "version": "[10.3.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.ServiceModel.Duplex": {
+              "target": "Package",
+              "version": "[4.4.*, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[4.4.*, )"
+            },
+            "System.ServiceModel.NetTcp": {
+              "target": "Package",
+              "version": "[4.4.*, )"
+            },
+            "System.ServiceModel.Security": {
+              "target": "Package",
+              "version": "[4.4.*, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

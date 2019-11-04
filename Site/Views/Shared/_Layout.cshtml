@@ -1,0 +1,27 @@
+﻿<!DOCTYPE HTML>
+
+<html dir="rtl">
+<head>
+    <title>@SiteData.Title</title>
+    <meta charset="utf-8" />
+    @Html.Partial("IncludeCSS.cshtml")
+    
+</head>
+<body id="top">
+
+    @Html.Partial("Header.cshtml")
+
+    @Html.Partial("Banner.cshtml")
+
+    @Html.Partial("IncludeJS.cshtml")
+
+    @RenderBody()
+
+    @Html.Partial("Footer.cshtml")
+
+    @RenderSection("Scripts", required: false)
+
+
+
+</body>
+</html>
