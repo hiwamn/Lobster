@@ -47,6 +47,7 @@ namespace CoreExtension
             app.ConfigureStaticFiles();
             app.ConfigureSwager();
             app.ConfigureSession();
+            app.ConfigureCors();
             app.ConfigureMvc();
         }
 

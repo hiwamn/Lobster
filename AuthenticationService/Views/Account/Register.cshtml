@@ -1,0 +1,135 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";   
+}
+
+<div class="row card  mr-0">
+
+    <form name="RegisterForm" asp-action="Register" asp-controller="Account" method="post">
+        <input id="returnUrl" asp-for="returnUrl" type="hidden" value="@Model.returnUrl" />
+        <h4 class="info-title text-white bg-success p-3">ساخت حساب کاربری جدید</h4>
+        <br />
+        @*<div asp-validation-summary="All" class="text-danger"></div>*@
+        <div class="row p-4" @*style="padding-left:0px" *@>
+
+            <div id="divUserInfo" class="row pl-0 m-2">
+
+                <div class="form-group col-12 col-sm-12 col-md-6">
+                    <div @*style="text-align:right" *@>
+                        <label asp-for="Name"></label>
+                    </div>
+                    <input id="@Model.Name" asp-for="Name" class="form-control" />
+                    <span id="spnName" asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-12 col-sm-12 col-md-6 ">
+                    <div @*style="text-align:right" *@>
+                        <label asp-for="FamilyName"></label>
+                    </div>
+                    <input id="@Model.FamilyName" asp-for="FamilyName" class="form-control" />
+                    <span id="spnFamilyName" asp-validation-for="FamilyName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-12 col-sm-12 col-md-6">
+                    <div @*style="text-align:right" *@>
+                        <label asp-for="NationalCode"></label>
+                    </div>
+                    <input id="@Model.NationalCode" asp-for="NationalCode" class="form-control" />
+                    <span id="spnNationalCode" asp-validation-for="NationalCode" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-12 col-sm-12 col-md-6">
+                    <div @*style="text-align:right" *@>
+                        <label asp-for="PhoneNumber"></label>
+                    </div>
+                    <input id="@Model.PhoneNumber" asp-for="PhoneNumber" class="form-control" />
+                    <span id="spnPhoneNumber" asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-12 col-sm-12 col-md-6">
+                    <div @*style="text-align:right" *@>
+                        <label asp-for="Password"></label>
+                    </div>
+                    <input id="@Model.Password" asp-for="Password" class="form-control" />
+                    <span id="spnPassword" asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-12 col-sm-12 col-md-6">
+                    <div @*style="text-align:right" *@>
+                        <label asp-for="ConfirmPassword"></label>
+                    </div>
+                    <input id="@Model.ConfirmPassword" asp-for="ConfirmPassword" class="form-control" />
+                    <span id="spnConfirmPassword" asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+
+                <button type="button" class="col-12 btn btn-primary mt-5" id="RegisterLevelOne">ثبت نام</button>
+
+            </div>
+            <div id="divSmsCode" class="row col-12 text-center m-0 pr-0 PL-0">
+                <center>
+                    <div class="row col-12 text-center m-0 pr-0 PL-0">
+                        <i class="alert alert-danger material-icons text-center text-white col-3" style="border-bottom-left-radius:0px;border-top-left-radius:0px;">phone_android</i>
+                        <br />
+                        <p class="alert alert-light col-9" style="border-bottom-right-radius:0px;border-top-right-radius:0px;">
+                            ما یک کد احراز هویت به موبایل شما ارسال کردیم،لطفا کد دریافت شده را در کادر زیر وارد کنید
+                        </p>
+                    </div>
+                    <div class="mt-4 col-12 pr-0 pl-0">
+                        <div>
+                            <label asp-for="Code"></label>
+                        </div>
+                        <input asp-for="Code" class="form-control" />
+                        <span id="spnCode" asp-validation-for="Code" class="text-danger"></span>
+                    </div>
+                </center>
+
+                <button type="button" class="col-12 btn btn-primary mt-5" id="RegisterLevelTwo">ثبت نام</button>
+
+            </div>
+            <div id="divImages" class="row col-12 m-5 justify-content-sm-center" @*style="padding: 0px 0px;" *@>
+                <center>
+
+                    <input type="hidden" id="inputPi" />
+                    <div class="row col-12 m-1 justify-content-sm-center" style="padding: 0px 0px;">
+                        <center>
+
+                            <div class="form-group">
+                                <input type="hidden" asp-for="ImgCartMelli" id="ImgCartMelli" />
+                                @await Html.PartialAsync("~/Views/Picture/Index.cshtml", new DefaultImageHolderItem { Id = "ImgCartMelli", ImagePath = "/assets/img/bg_click_too_choose_image.png", ForWhat = "UserProfile" })
+                            </div>
+
+                        </center>
+                    </div>
+
+                    <div class="row col-12 m-1 justify-content-sm-center" style="padding: 0px 0px;">
+                        <center>
+
+                            <div class="form-group">
+                                <input type="hidden" asp-for="ImgPersonally" id="ImgPersonally"  />
+                                @await Html.PartialAsync("~/Views/Picture/Index.cshtml", new DefaultImageHolderItem { Id = "ImgPersonally", ImagePath = "/assets/img/bg_click_too_choose_image.png", ForWhat = "UserProfile" })
+                            </div>
+
+                        </center>
+                    </div>
+
+                    <div class="row col-12 m-1 justify-content-sm-center" style="padding: 0px 0px;">
+                        <center>
+
+                            <div class="form-group">
+                                <input type="hidden" asp-for="ImgSafheAvvaleDaftarche" id="ImgSafheAvvaleDaftarche" />
+                                @await Html.PartialAsync("~/Views/Picture/Index.cshtml", new DefaultImageHolderItem { Id = "ImgSafheAvvaleDaftarche", ImagePath = "/assets/img/bg_click_too_choose_image.png", ForWhat = "UserProfile" })
+                            </div>
+
+                        </center>
+                    </div>
+
+                    <button type="button" class="col-12 btn btn-primary mt-5" id="RegisterLevelThree">ثبت نام</button>
+
+                </center>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+<script src="~/assets/js/register.js"></script>

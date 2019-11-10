@@ -1,0 +1,70 @@
+﻿@model InvalidImagesModel
+
+@{
+    string idNationalCard = null;
+    string idPerson = null;
+    string idBooklet = null;
+
+    if (Model.NationalCard != null)
+    {
+        idNationalCard = @Model.NationalCard.ImageTypeID.ToString();
+    }
+    if (Model.Person != null)
+    {
+        idPerson = @Model.Person.ImageTypeID.ToString();
+    }
+    if (Model.Booklet != null)
+    {
+        idBooklet = @Model.Booklet.ImageTypeID.ToString();
+    }
+
+}
+<div class="container-fluid pull-center">
+    <div class="col-12 card">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="info-title text-primary">ارسال عکس های مورد نیاز</h3>
+            </div>
+            @Html.Partial("_ValidationSummary")
+
+            <div>
+                <form asp-action="SendInvalidImages" asp-controller="Account" onsubmit="return validateForms('@idNationalCard','@idPerson','@idBooklet')">
+                    <input type="hidden" asp-for="returnUrl" />
+                    <input type="hidden" asp-for="PersonID" />
+
+
+                    @if (Model.NationalCard != null)
+                    {
+                        <div class="form-group">
+
+                            <input type="hidden" asp-for="@Model.NationalCardImageID" id="@Model.NationalCard.ImageTypeID.ToString()" />
+                            @await Html.PartialAsync("~/Views/Picture/Index.cshtml", new DefaultImageHolderItem { Id = Model.NationalCard.ImageTypeID.ToString(), Name = Model.NationalCard.ImageTypeName, ImagePath = "/assets/img/bg_click_too_choose_image.png", ForWhat = "UserProfile" })
+                        </div>
+                    }
+                    @if (Model.Person != null)
+                    {
+                        <div class="form-group">
+
+                            <input type="hidden" asp-for="@Model.PersonCardImageID" id="@Model.Person.ImageTypeID.ToString()" />
+                            @await Html.PartialAsync("~/Views/Picture/Index.cshtml", new DefaultImageHolderItem { Id = Model.Person.ImageTypeID.ToString(), Name = Model.Person.ImageTypeName, ImagePath = "/assets/img/bg_click_too_choose_image.png", ForWhat = "UserProfile" })
+                        </div>
+                    }
+                    @if (Model.Booklet != null)
+                    {
+                        <div class="form-group">
+
+                            <input type="hidden" asp-for="@Model.BookletImageID" id="@Model.Booklet.ImageTypeID.ToString()" />
+                            @await Html.PartialAsync("~/Views/Picture/Index.cshtml", new DefaultImageHolderItem { Id = Model.Booklet.ImageTypeID.ToString(), Name = Model.Booklet.ImageTypeName, ImagePath = "/assets/img/bg_click_too_choose_image.png", ForWhat = "UserProfile" })
+                        </div>
+                    }
+
+                    <button type="submit" class="col-12 btn btn-primary mt-5">ارسال</button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/SendInvalidImages.js"></script>

@@ -26,14 +26,14 @@ namespace Site.Controllers
             this.unit = unit;
             this.getTopProduct = getTopProduct;
         }
-        [Authorize]
+        //[Authorize]
         public IActionResult Index()
         {
             var result = getTopProduct.Execute(1, SiteData.BlockSize.ToInt(), new GetTopProductDto { BlockNumber = 1, IsAdvertisement = null, IsImmediate = null, IsSpecial = null, ProductCategoryId = null });
             List<ProductDto> product = Api.ToObject<List<ProductDto>>(result);
             return View(product);
         }
-       // [Authorize]
+       [Authorize]
         public IActionResult Register()
         {
             return View();

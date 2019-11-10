@@ -1,0 +1,73 @@
+﻿@model DefaultImageHolderItem
+@{
+    var idfile = Model.Id + "file";
+    var idpic = Model.Id + "pic";
+    var idprogree = Model.Id + "progress-dev";
+}
+
+<input type="file" id="@idfile" style="display:none" />
+
+<div class="row col-12 m-1 justify-content-sm-center">
+    <center>
+
+        <div class="UplodadImage bg-rose" style="width:240px;height:240px;">
+            <p class="bg-primary" style="height:30px;">@Model.Name</p>
+
+            <center>
+                <img class="UplodadImageChild" src="@Model.ImagePath" id="@idpic" style="width:200px;height:200px;" onclick="return document.getElementById('@idfile').click()" @*onclick="window.open(document.getElementById('@idpic').getAttribute('src'))" *@ />
+            </center>
+            <div class="progress" style="height:2px">
+                <div class="progress-bar" id="@idprogree" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                    <span class="sr-only"></span>
+                </div>
+            </div>
+        </div>
+
+    </center>
+</div>
+
+
+
+<script>
+
+    document.getElementById('@idfile').addEventListener("change", function () {
+        document.getElementById('@idpic').setAttribute('src','@Model.ImagePath');
+            document.getElementById('@Model.Id').value = '';
+            var file = this.files[0];
+        var upload = new Upload(file, '@Model.ForWhat',  "@Constants._AsyncUploadPicture", function (data) {
+            document.getElementById('@Model.Id').value = data.id;
+
+            var reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = function (e) {
+                document.getElementById('@idpic').src = e.target.result;
+            }
+
+            },'@idprogree');
+
+            if (upload.getType() != "image/jpeg") {
+                alert("فرمت عکس صحیح نیست");
+                return;
+            }
+            if (upload.getSize()>1000000) {
+                alert("اندازه فایل بزرگ است");
+                return;
+            }
+
+            upload.devsharpUpload();
+    });
+
+    if ('@Model.ImageId'!= null && '@Model.ImageId'!= 0) {
+        var id = '@Model.ImageId';
+        document.getElementById('@Model.Id').value = id;
+        var sendData = {
+            ImageID: id,
+            GetFileCode: 3
+        };
+        AJX.get('http://192.168.30.151:62000/GetImage', sendData, function (result) {
+            document.getElementById('@idpic').src = "data:image/jpeg;base64," + result.result.fileContents;
+        });
+    }
+
+</script>

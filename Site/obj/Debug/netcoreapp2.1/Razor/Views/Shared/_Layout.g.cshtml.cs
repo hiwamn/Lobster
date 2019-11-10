@@ -70,7 +70,7 @@ using Dto.ReturnDto;
             WriteLiteral("<!DOCTYPE HTML>\r\n\r\n<html dir=\"rtl\">\r\n");
             EndContext();
             BeginContext(37, 127, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "abc71f78055f4ec7afaa71c1564c7e48", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66943aca5b7c4c8e8ee5eae43e46044e", async() => {
                 BeginContext(43, 13, true);
                 WriteLiteral("\r\n    <title>");
                 EndContext();
@@ -110,7 +110,7 @@ Write(Html.Partial("IncludeCSS.cshtml"));
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(166, 256, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2d00a81246264e3ca38ebc9e457272bf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "561a1bf0be5f4921855c0e44c7e64c7c", async() => {
                 BeginContext(181, 8, true);
                 WriteLiteral("\r\n\r\n    ");
                 EndContext();

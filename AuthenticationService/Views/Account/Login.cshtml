@@ -1,0 +1,99 @@
+﻿@model LoginViewModel
+
+<div class="container-fluid pull-center">
+    <div class="row" id="form_login">
+        @if (Model.EnableLocalLogin)
+        {
+            @*<img src="~/ic_logo_round.png" style="margin:0 90px 0 0;position:absolute;z-index:10000;" />*@
+            <div class="card">
+
+                <center class="panel-heading">
+                    <h4 class="info-title text-white bg-success p-3">ورود</h4>
+                </center>
+
+                <div class="p-3">
+                    @Html.Partial("_ValidationSummary")
+                    <form asp-route="Login" onsubmit="return validateForm()">
+                        <input type="hidden" asp-for="ReturnUrl" />
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label asp-for="Username"></label>
+                                <input class="form-control" asp-for="Username" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Password"></label>
+                                <input type="password" class="form-control" asp-for="Password" autocomplete="off">
+                                <span asp-validation-for="Password" class="danger" />
+                            </div>
+                            @if (Model.AllowRememberLogin)
+                            {
+                                <div class="form-group login-remember">
+                                    <label asp-for="RememberLogin">
+                                        <input asp-for="RememberLogin">
+                                        <strong>مرا به خاطر بسپار</strong>
+                                    </label>
+                                </div>
+                            }
+                            <div class="form-group">
+                                <button class="btn btn-primary" name="button" value="login">ورود</button>
+                                <div class="btn btn-danger text-white" style="color:white;">
+                                    @Html.ActionLink("ثبت نام", "Register", "Account", "http", null, null, new { Model.ReturnUrl }, null)
+                                </div>
+                                <div class="mt-2 btn-default text-white" style="color:white;">
+                                    @Html.ActionLink("بازیابی رمز عبور", "RestorePassword", "Account", "http", null, null, new { Model.ReturnUrl }, null)
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+        }
+        @if (Model.VisibleExternalProviders.Any())
+        {
+            <div class="col-md-6 col-sm-6 external-providers">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">External Login</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-inline">
+                            @foreach (var provider in Model.VisibleExternalProviders)
+                            {
+                                <li>
+                                    <a class="btn btn-default"
+                                       asp-action="ExternalLogin"
+                                       asp-route-provider="@provider.AuthenticationScheme"
+                                       asp-route-returnUrl="@Model.ReturnUrl">
+                                        @provider.DisplayName
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        }
+        @if (!Model.EnableLocalLogin && !Model.VisibleExternalProviders.Any())
+        {
+            <div class="alert alert-warning">
+                <strong>خطا</strong>
+                نام کاربری یا رمز عبور غلط است
+            </div>
+        }
+    </div>
+</div>
+<script src="~/js/Login.js"></script>
+
+
+<script>
+    window.onload = function () {
+            if ('@Model.pleaseWait.ToString()' == 'True')
+           {
+               ShowToast('حساب کاربری شما در دست بررسی است،لطفا روز کاری بعد مجددا تلاش کنید');
+
+           }
+   }
+</script>
