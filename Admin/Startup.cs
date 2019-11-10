@@ -14,6 +14,7 @@ namespace Admin
 {
     public class Startup
     {
+        int a = 3;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
